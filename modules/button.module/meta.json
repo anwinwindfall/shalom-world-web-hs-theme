@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "categories" : [ "forms_and_buttons" ],
+  "icon" : "/shalom_world_web_theme/images/module-icons/cta.svg",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 117666936294,
+  "label" : "Button",
+  "is_available_for_new_content" : true
+}
