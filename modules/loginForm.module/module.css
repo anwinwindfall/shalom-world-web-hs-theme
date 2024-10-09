@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .formWrapper{
+    margin: 0 auto;
+    background-color:  #D1DBE8;
+    border-radius: 8px;
+    max-width: 440px;
+    min-width: 315px;
+    height: 380px;
+    padding : 15px 10px;
+    position: relative;
+    @media screen and (max-width: 600px) {
+        height: 450px;
+    }
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color:  #D1DBE8;
+}
+.inputGroup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 10px;
+    width: 100%;
+        @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+.formElement{
+    width: 100%;
+}
+.formElement label{
+    margin: 5px;
+}
+.input{
+    /* margin: 5px; */
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(10, 59, 129, 0.6);
+    border-radius: 8px;
+    padding: 14px 7px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.submitButton{
+    border-color: transparent;
+    color: white;
+    background-color: #C23A3B;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    margin-top: 25px;
+}
+.form:after{
+    content: '';
+    background-image: url("https://143223961.fs1.hubspotusercontent-eu1.net/hubfs/143223961/US%20Election%20Prayer%20Page%20Assets/Login-Page/image%201.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 87%;
+}
+.label{
+    color: #0A3B81;
+    margin: 0px;
+};

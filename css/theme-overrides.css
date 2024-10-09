@@ -31,7 +31,7 @@
 /* 1a. Containers */
 
 {% set container_width = theme.spacing.maximum_content_width ~ 'px' %}
-{% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '1rem' %}
+/* {% set dnd_section_padding = theme.spacing.vertical_spacing ~ 'px ' ~ '1rem' %} */
 
 /* 1b. Colors */
 
@@ -305,7 +305,7 @@ button:active,
 {##############################   5. Forms   ###############################}
 {###########################################################################}
 
-form,
+/* form,
 .submitted-message {
   {{ body_font.style }};
   {{ form_border }};
@@ -319,7 +319,7 @@ form,
 
 /* Form title */
 
-.form-title {
+/* .form-title {
   {{ form_title_border}};
   {{ form_title_spacing }};
   {{ form_title_font.style }};
@@ -347,7 +347,7 @@ form legend {
 
 /* Inputs */
 
-form input[type=text],
+/* form input[type=text],
 form input[type=search],
 form input[type=email],
 form input[type=password],
@@ -360,11 +360,11 @@ form textarea {
   background-color: {{ form_field_bg_color }};
   color: {{ form_field_font_color }};
   border-radius: {{ form_field_corner_radius }};
-}
+} */
 
 /* Form placeholder text */
 
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color: {{ form_field_placeholder_color }};
 }
 
@@ -382,7 +382,7 @@ form textarea {
 
 /* Inputs - date picker */
 
-.hs-fieldtype-date .input .hs-dateinput:before {
+/* .hs-fieldtype-date .input .hs-dateinput:before {
   color: {{ form_field_placeholder_color }};
 }
 
@@ -396,11 +396,11 @@ form textarea {
 
 .fn-date-picker td.is-today .pika-button {
   color: {{ primary_color }};
-}
+}  */
 
 /* Submit button */
 
-form input[type=submit],
+/* form input[type=submit],
 form .hs-button {
   {{ form_submit_button_border }};
   {{ form_submit_button_spacing }};
@@ -425,11 +425,11 @@ form input[type=submit]:active,
 form .hs-button:active {
   background-color: rgba({{ color_variant(theme.buttons.background.color.color, 40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }});
   border-color: {{ color_variant(theme.buttons.border.border.top.color, 40) }};
-}
+} */ 
 
 {###########################################################################}
 {#############################   6. Tables   ###############################}
-{###########################################################################}
+{###########################################################################} */
 
 /* Table */
 
