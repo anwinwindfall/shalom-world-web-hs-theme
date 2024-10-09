@@ -10,9 +10,14 @@
     <meta name="description" content="{{ page_meta.meta_description }}">
     {{ require_css(get_asset_url('/shalom_world_web_theme/css/US Election/global.css')) }}
     {# This is intended to be used if a template requires template specific style sheets #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- {% if template_css %}
       {{ require_css(get_asset_url(template_css)) }}
     {% endif %} -->
+    {{ require_css(get_asset_url("../../css/main.css")) }}
+    {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
     {# To see a full list of what is included via standard_header_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
     {{ standard_header_includes }}
   </head>

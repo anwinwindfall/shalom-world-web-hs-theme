@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  .header-box {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .logo img {
+    width: 189px;
+    height: 57px;
+  }
+  
+  /* User Icon Styling */
+  .user-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    margin-right: 18px;
+  }
+  
+  .section-profile{
+    display: flex;
+  }
+  
+  /* Navbar Styles (Visible only on larger screens) */
+  .navbar {
+    display: flex;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+    flex-grow: 1; 
+    gap: 60px;
+    margin-top: -30px;
+  }
+  
+  .nav-links li {
+    margin-top: 39px;
+    margin-right: 10px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #0A3B81;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.05px;
+    text-align: left;
+  }
+  
+  .live-badge {
+    position: absolute;
+    top: -31px;
+    left: 74px;
+    background: #C23A3B;
+    color: white; 
+    padding: 0px 4px 0px 4px;
+    font-size: 12px;
+    border-radius: 2px 0px 0px 0px;
+    font-weight: bold;
+    opacity: 0px;
+  
+  }
+  
+  
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none; /* Hidden by default, shown only in mobile */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #003366;
+    margin: 4px 0;
+  }
+  /* Mobile Navigation Styles */
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 100px; /* Start below the header */
+    right: 20px; /* Positioned on the right side */
+    width: 258px; /* Fixed width */
+    height: 0px; /* Initially hidden by height */
+    background: #205CB2;
+  ; /* Blue background */
+    opacity: 0; /* Invisible at first */
+    overflow: hidden; /* Ensure the content does not overflow */
+    transition: height 0.5s ease, opacity 0.5s ease; /* Smooth transition for height and opacity */
+    z-index: 9999; /* Ensures it stays on top */
+    width: 258px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  
+  
+  }
+  
+  
+  /* Active state - When the menu is toggled */
+  .mobile-nav.active {
+    height: 234px; /* Expands to its full height */
+    opacity: 1; /* Fades in */
+  }
+  
+  /* Close Icon */
+  .close-icon {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  
+    padding: 10px;
+    text-align: right;
+  }
+  
+  /* Mobile Navigation Links */
+  .mobile-nav-links {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: -20px
+    
+  }
+  
+  .mobile-nav-links li {
+    padding: 5px 0;
+    
+  }
+  .mobile-nav-links li a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35.36px;
+    text-align: left;
+  
+  }
+  
+  .mobile-nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .mobile-live-badge{
+    position: absolute;
+    top: 1px;
+    left: 74px;
+    background: #C23A3B;
+    color: white; 
+    padding: 0px 4px 0px 4px;
+    font-size: 12px;
+    border-radius: 2px 0px 0px 0px;
+    font-weight: bold;
+    opacity: 0px;
+  
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1120px) {
+    .navbar {
+        display: none;
+    }
+  
+    .hamburger {
+        display: flex;
+    }
+  
+    .mobile-nav {
+        display: block;
+    }
+  }
+  
+  
+  
+  

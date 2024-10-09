@@ -8,30 +8,37 @@
 
 
 {% block body %}
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--login"
+%}
+    {% dnd_section %}
 
-    {% dnd_area "dnd_area"  %}
-        {% dnd_section
-        full_width=true,
-        padding = {
-        "top": "50px",
-        }
-        %}
-        {% dnd_row%}
-            {% dnd_module 'name'
-            path="/shalom_world_web_theme/modules/loginForm",
-            width=12,
+        {% dnd_module 'name'
+            path="/shalom_world_web_theme/modules/header"
+            width=5
             offset=0,
-            horizontal_alignment='left',
-            no_wrap=true,
-            horizontal_alignment = 'LEFT'
+            horizontal_alignment='center'
         %}
         {% end_dnd_module %}
-
-        {% end_dnd_row %}
-
-                
-
-        {% end_dnd_section %}
-    {% end_dnd_area %}
-
+    {% end_dnd_section %}
+    {% dnd_section
+    background_color="rgba(10, 59, 129, 1)",
+    full_width=true,
+    padding ={
+    "top": "40px",
+    "right": 0,
+    "bottom": "40px",
+    "left": 0
+    }
+  %}
+      {% dnd_module 'login'
+      path="/shalom_world_web_theme/modules/loginForm" 
+      width=
+      offset=0
+      %}
+        {% end_dnd_module %}
+  {% end_dnd_section %}
+{% end_dnd_area %}
 {% endblock body %}
+
