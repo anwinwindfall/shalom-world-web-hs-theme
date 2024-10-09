@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #033d71;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.offeredprayer_container {
+    text-align: center;
+}
+
+.offeredprayer_container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.offeredprayer_container h2,
+.offeredprayer_container .label {
+    color: #FFFFFF99;
+
+}
+
+.offeredprayer_container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 20px; */
+    row-gap: 2%;
+    column-gap: 1%;
+}
+
+.offeredprayer_container .card {
+    background-color: #08396d;
+    background-color: #00000033;
+    padding: 20px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.offeredprayer_container .card h2 {
+    font-size: 1.2rem;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.offeredprayer_container .count {
+    font-size: 2rem;
+    /* font-size: 10px; */
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.offeredprayer_container .label {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.offeredprayer_container .rosary {
+    border-top-left-radius: 10px;
+}
+
+.offeredprayer_container .holyHour {
+    border-top-right-radius: 10px;
+}
+
+.offeredprayer_container .memorare {
+    border-bottom-left-radius: 10px;
+}
+
+.offeredprayer_container .dedication {
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .offeredprayer_container h1 {
+        font-size: 1.2rem;
+    }
+
+    .offeredprayer_container .grid {
+        gap: 15px;
+        row-gap: 2%;
+        column-gap: 1%;
+    }
+
+    .offeredprayer_container .card {
+        padding: 10px;
+    }
+
+    .offeredprayer_container .card h2 {
+        font-size: 8px;
+    }
+
+    .offeredprayer_container .count {
+        font-size: 1.5rem;
+    }
+
+    .offeredprayer_container .label {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .offeredprayer_container h1 {
+        font-size: 1rem;
+    }
+
+    .offeredprayer_container .grid {
+        gap: 10px;
+        row-gap: 2%;
+        column-gap: 1%;
+    }
+
+    .offeredprayer_container .card {
+        padding: 8px;
+    }
+
+    .offeredprayer_container .card h2 {
+        font-size: 0.9rem;
+        font-size: 8px;
+    }
+
+    .offeredprayer_container .count {
+        font-size: 1.2rem;
+    }
+
+    .offeredprayer_container .label {
+        font-size: 0.7rem;
+        font-size: 6px;
+    }
+}
