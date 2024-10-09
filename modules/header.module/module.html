@@ -1,1 +1,58 @@
-<!-- module html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-box">
+        <div class="logo">
+            <img src="https://www.shalomworld.ca/hubfs/US%20Election%20Prayer%20Page%20Assets/logo.svg" alt="Shalom World Prayer">
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Prayer Board</a></li>
+                <li><a href="#">One Month Campaign</a></li>
+                <li><a href="#">24 Hour Rosary</a></li>
+                <li><a href="#">
+                    <span class="live-badge">LIVE</span>
+                    Adoration</a></li>
+            </ul>
+        </nav>
+
+        <div class="section-profile">
+            <div class="user-icon">
+                <span>JJ</span>
+            </div>
+          
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <div class="close-icon" id="closeIcon">✖</div>
+            <ul class="mobile-nav-links">
+                <li><a href="#">Prayer Board</a></li>
+                <li><a href="#">One Month Campaign</a></li>
+                <li><a href="#">24 Hour Rosary</a></li>
+                <li><a href="#">Adoration
+                    <span class="mobile-live-badge">LIVE</span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script src="app.js"></script>
+</body>
+</html>
