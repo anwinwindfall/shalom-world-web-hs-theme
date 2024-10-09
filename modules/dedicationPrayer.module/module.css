@@ -1,0 +1,50 @@
+.dedication-prayer {
+    background: #FFFFFF;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 62px 30px 28px 30px;
+    margin-top: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.dedication-prayer h4 {
+    color: #0A3B81;
+    font-family: Libre Baskerville;
+    font-size: 29px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0px;
+}
+
+.dedication-prayer p {
+    color: #030303;
+    font-family: Libre Baskerville;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 16px;
+    /* max-width: 350px; */
+}
+
+@media only screen and (min-width: 768px) {
+    .dedication-prayer {
+        background: #FFFFFF;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 70px 120px;
+        margin-top: 100px;
+    }
+
+    .dedication-prayer h4 {
+        color: #0A3B81;
+        font-family: Libre Baskerville;
+        font-size: 67px;
+        font-weight: 700;
+        text-align: left;
+    }
+    .dedication-prayer p {
+        padding-top: 66px;
+        /* max-width: 772px; */
+    }
+}
