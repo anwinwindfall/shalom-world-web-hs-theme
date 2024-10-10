@@ -7,7 +7,7 @@
 }
 
 .campaignPlan_title h4{
-    color: #0A3B81;
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 20px;
     margin: 0px !important;
@@ -57,7 +57,7 @@
     max-width: 1000px;
 }
     .campaign_plan {
-        background: aqua;
+        background: #FFFFFF#;
         max-width: 1000px;
         margin: 0 auto;
         padding: 70px;
