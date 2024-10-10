@@ -2,15 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'inter'
   }
 
-  .container {
+  .container_login {
     max-width: 440px;
     margin: 0 auto;
   }
 
-  .formWrapper{
+  .container_login .formWrapper{
     margin: 0 auto;
     background-color:  #D1DBE8;
     border-radius: 8px;
@@ -23,7 +23,7 @@
         height: 450px;
     }
 }
-.form{
+.container_login .form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +33,7 @@
     padding: 20px;
     background-color:  #D1DBE8;
 }
-.inputGroup{
+.container_login .inputGroup{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -43,13 +43,13 @@
         grid-template-columns: 1fr;
     }
 }
-.formElement{
+.container_login .formElement{
     width: 100%;
 }
-.formElement label{
+.container_login .formElement label{
     margin: 5px;
 }
-.input{
+.container_login .input{
     /* margin: 5px; */
     padding: 5px;
     outline: none;
@@ -60,7 +60,7 @@
     width: 100%;
     height: 50px;
 }
-.submitButton{
+.container_login .submitButton{
     border-color: transparent;
     color: white;
     background-color: #C23A3B;
@@ -80,7 +80,7 @@
     transition-timing-function: linear;
     margin-top: 25px;
 }
-.form:after{
+.container_login .form:after{
     content: '';
     background-image: url("https://143223961.fs1.hubspotusercontent-eu1.net/hubfs/143223961/US%20Election%20Prayer%20Page%20Assets/Login-Page/image%201.svg");
     background-repeat: no-repeat;
@@ -92,7 +92,21 @@
     height: 100px;
     top: 87%;
 }
-.label{
+.container_login .label{
     color: #0A3B81;
     margin: 0px;
 };
+
+.container_login .formTitle{
+    width: 100%;
+    text-align: center;
+}
+.container_login h4{
+    display: block;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400 !important;
+}

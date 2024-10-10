@@ -1,0 +1,25 @@
+[
+  {
+   "type": "group",
+   "id": "392943d5-ff75-6623-e758-115a6747d1fb",
+   "label": "Content",
+   "children": [
+    {
+     "type": "text",
+     "id": "ee096e96-3a45-c544-9fcc-dae1faf48913",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title"
+    },
+    {
+     "type": "richtext",
+     "id": "44be4c20-18a7-2947-2b52-42a094d737c6",
+     "label": "Prayer Content",
+     "name": "prayer_content"
+    }
+   ],
+   "name": "content",
+   "default": [],
+   "occurrence": {}
+  }
+ ]

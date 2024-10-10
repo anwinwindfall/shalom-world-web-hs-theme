@@ -1,52 +1,60 @@
-.dedication-prayer {
+
+.campaign_plan {
     background: #FFFFFF;
     max-width: 400px;
     margin: 0 auto;
     padding: 30px 30px 28px 30px;
-    margin-top: 100px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
 }
 
-.dedication-prayer h4 {
+.campaign_plan h4 {
     color: #0A3B81;
     font-family: Libre Baskerville;
-    font-size: 29px;
+    font-size: 22px;
     font-weight: 700;
     text-align: left;
     margin: 0px;
 }
 
-.dedication-prayer p {
+.campaign_plan p {
     color: #030303;
     font-family: Libre Baskerville;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     text-align: left;
     padding-top: 16px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #0A3B8166;
+    margin: 0px;
+    margin-bottom: 40px;
     /* max-width: 350px; */
+}
+.last-prayer{
+    margin: 0px !important;
+    border: 0px !important;
 }
 
 @media only screen and (min-width: 768px) {
-    .dedication-prayer {
+    .campaign_plan {
         background: #FFFFFF;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 70px 120px;
+        padding: 70px;
         margin-top: 100px;
     }
 
-    .dedication-prayer h4 {
+    .campaign_plan h4 {
         color: #0A3B81;
         font-family: Libre Baskerville;
-        font-size: 67px;
+        font-size: 24px;
         font-weight: 700;
         text-align: left;
     }
-    .dedication-prayer p {
-        padding-top: 66px;
+    .campaign_plan p {
+        padding-top: 20px;
         /* max-width: 772px; */
     }
 }
