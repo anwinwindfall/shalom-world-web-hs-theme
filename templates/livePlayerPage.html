@@ -5,7 +5,7 @@
 -->
 
 {% extends "./layouts/sw-base.html" %}
-
+{% set vimeo = true%}
 {% block body %}
     {%dnd_area "dnd_area"
     label="Main section",
@@ -40,7 +40,12 @@
     padding={ "top": 0, "bottom": "100px" }
     %}
         {# Live player #}
-         
+
+        {%dnd_module
+        path="/shalom_world_web_theme/modules/player",
+        %}
+        {%end_dnd_module%}
+
     {% end_dnd_section %}
     {% dnd_section
     background_color="rgba(10, 59, 129, 1)"
