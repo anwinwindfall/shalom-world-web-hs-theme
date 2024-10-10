@@ -1,11 +1,52 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+   "children": [
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "cc3e9b2d-89d3-af79-5ec8-219547b6a4f0",
+     "label": "Prayer title ",
+     "locked": false,
+     "name": "prayer_title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "6142cfaa-cfdb-4183-b457-48dc5b1c5725",
+     "label": "Popup prayer title",
+     "locked": false,
+     "name": "popup_prayer_title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "display_width": null,
+     "id": "471014e6-22ae-692c-7517-2873901376be",
+     "label": "Prayer Popup Content",
+     "locked": false,
+     "name": "prayer_popup_content",
+     "required": false,
+     "type": "richtext"
+    }
+   ],
+   "default": [],
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "id": "a00f19e0-001c-5548-7400-fbd2af14751d",
+   "label": "Prayer counter content",
+   "locked": false,
+   "name": "prayer_counter_content",
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "visibility": null,
+   "occurrence": {}
   }
-]
+ ]

@@ -1,16 +1,8 @@
 <!-- module html  -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter Design</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+{% for item in module.prayer_counter_content %}
   <div class="counter-container">
-    <span class="label">Rosary</span>
+    <span class="label">{{ item.prayer_title }}</span>
 
     <span class="vist-page">Visit Page</span>
 
@@ -37,32 +29,13 @@
           <button class="close-btn" id="closeBtn">&times;</button>
           <section>
               <div class="dedication-prayer">
-                  <h4>Dedication Prayer</h4>
+                  <h4>{{ item.popup_prayer_title }}</h4>
                   <p>
-                      O Immaculate Heart of Mary, we humbly come before you as the presidential election in November draws
-                      near.
-                  </p>
-                  <p>
-                      We entrust our nation, the United States of America, to your Immaculate Heart. Intercede for us, dear
-                      Mother, that all voters may be guided by wisdom and discernment. May they choose leaders who reflect
-                      justice, compassion, and integrity.
-                  </p>
-                  <p>
-                      We pray for healing and unity among the people of this great nation. Help us to overcome division and
-                      discord, fostering a spirit of love and cooperation. May your maternal guidance inspire us to prioritize
-                      the common good, to seek peace, and to promote justice for all.
-                  </p>
-                  <p>
-                      As we face this pivotal moment in our history, we ask that your Immaculate Heart may shine a light upon
-                      our paths. Protect our democracy and lead us toward a future filled with hope and prosperity. Bring us
-                      closer to your Son, Jesus Christ, and to a deeper commitment to serving one another. O Mary Immaculate,
-                      pray for us. Amen.
+                  {{ item.prayer_popup_content }}
                   </p>
               </div>
           </section>
       </div>
   </div>
+{% endfor %}
 
-  <script src="script.js"></script>
-</body>
-</html>
