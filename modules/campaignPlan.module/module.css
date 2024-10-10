@@ -15,7 +15,7 @@
 }
 
 .campaign_plan {
-    background-color: aqua;
+    background-color: #FFFFFF;
     max-width: 400px;
     margin: 0 auto;
     padding: 30px 30px 28px 30px;
@@ -27,7 +27,7 @@
 
 .campaign_plan h4 {
     color: #0A3B81;
-    font-family: Libre Baskerville;
+    font-family: 'Inter', serif;
     font-size: 22px;
     font-weight: 700;
     text-align: left;
@@ -36,7 +36,7 @@
 
 .campaign_plan p {
     color: #030303;
-    font-family: Libre Baskerville;
+    font-family: 'Inter', serif;
     font-size: 18px;
     font-weight: 400;
     text-align: left;
@@ -57,7 +57,7 @@
     max-width: 1000px;
 }
     .campaign_plan {
-        background: #FFFFFF#;
+        background: #FFFFFF;
         max-width: 1000px;
         margin: 0 auto;
         padding: 70px;
@@ -65,7 +65,7 @@
     }
 
     .campaign_plan h4 {
-        color: #0A3B81;
+        color: #FFFFFF;
         font-family: Libre Baskerville;
         font-size: 24px;
         font-weight: 700;
