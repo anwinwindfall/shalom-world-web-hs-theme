@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner_a_style {
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+    overflow: hidden;
+}
+
+.banner_a_style .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.banner_a_style .banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+
+    background: linear-gradient(to bottom, rgba(10, 59, 129, 0.5) 0%, rgba(10, 59, 129, 1) 100%);
+    z-index: 2;
+
+
+
+
+
+}
+
+.banner_a_style .banner-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* height: 100%; */
+    padding: 0 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 3%;
+
+}
+
+.banner_a_style .banner-content .logo {
+    width: 200px;
+    margin-right: 20px;
+
+}
+
+.banner_a_style .banner-content .text {
+    max-width: 200px;
+    border-left: 3px solid #EDCEA1;
+    padding-left: 10px;
+    text-align: left;
+    color: #EDCEA1;
+}
+
+.banner_a_style .text h2 {
+    font-size: 24px;
+
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner_a_style .text p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.banner_a_style .text p span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .banner_a_style .campaign_month {
+        color: #fff;
+        text-align: center;
+    }
+
+
+
+    .banner_a_style {
+        height: 300px;
+
+    }
+
+    .banner_a_style .banner-overlay {
+        height: 300px;
+
+        background: linear-gradient(to bottom, rgba(10, 59, 129, 0.4) 0%, rgba(10, 59, 129, 1) 100%);
+    }
+
+    .banner_a_style .banner-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    .banner_a_style .logo {
+        /* width: 60px; */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner_a_style .text h2 {
+        font-size: 20px;
+
+    }
+
+    .banner_a_style .text {
+        border-left: none !important;
+        text-align: center !important;
+    }
+
+    .banner_a_style .text p {
+        font-size: 14px;
+    }
+}

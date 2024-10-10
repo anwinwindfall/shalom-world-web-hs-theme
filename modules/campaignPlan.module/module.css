@@ -1,0 +1,78 @@
+
+.conatainer_campaignPlan {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.campaignPlan_title h4{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px !important;
+    font-family: 'inter'
+}
+
+.campaign_plan {
+    background-color: aqua;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px 30px 28px 30px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.campaign_plan h4 {
+    color: #0A3B81;
+    font-family: Libre Baskerville;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0px;
+}
+
+.campaign_plan p {
+    color: #030303;
+    font-family: Libre Baskerville;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #0A3B8166;
+    margin: 0px;
+    margin-bottom: 40px;
+    /* max-width: 350px; */
+}
+.last-prayer{
+    margin: 0px !important;
+    border: 0px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .conatainer_campaignPlan {
+    max-width: 1000px;
+}
+    .campaign_plan {
+        background: #FFFFFF#;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 70px;
+        margin-top: 40px;
+    }
+
+    .campaign_plan h4 {
+        color: #0A3B81;
+        font-family: Libre Baskerville;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+    .campaign_plan p {
+        padding-top: 20px;
+        /* max-width: 772px; */
+    }
+}
