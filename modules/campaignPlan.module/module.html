@@ -1,5 +1,9 @@
 <!-- module html  -->
 
+<div class="conatainer_campaignPlan">
+<div class="campaignPlan_title">
+<h4>Campaign Plan</h4>
+</div>
 <div class="campaign_plan">
 {% set arraylength = module.content|length %}
     {% for item in module.content %}
@@ -11,4 +15,5 @@
         {{ item.prayer_content }}
     </p>
     {% endfor %}
+  </div>
   </div>
