@@ -27,10 +27,14 @@
 
 .bgMain ul.logo-center img {
     max-width: 270px;
+    @media only screen and (max-width: 400px){
+        max-width: 270px;
+        max-height: 93px;
+    }
 }
 
 .bgMain ul.logo-center p {
-    font-family: Inter;
+    font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
@@ -45,7 +49,7 @@
 
 .bgMain:after {
     content: '';
-    background: linear-gradient(180deg, #0a3b8100 38%, #0a3b81 91%) !important;
+    background: linear-gradient(180deg, #0a3b8100 30%, #0a3b81 80%) !important;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -54,12 +58,17 @@
 }
 
 /* Media query for screens smaller than or equal to 768px */
+@media only screen and (min-width: 1440px) {
+    .bgMain ul.logo-center {
+    bottom: -4px;
+    }
+}
 
 
 @media only screen and (min-width: 768px) {
     .bgMain {
         background: url("https://143223961.fs1.hubspotusercontent-eu1.net/hubfs/143223961/US%20Election%20Prayer%20Page%20Assets/Prayer%20Board/Rectangle%20111.png");
-        height: 600px;
+        height: 70vh;
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -67,7 +76,7 @@
     }
     .bgMain:after {
         content: '';
-        background: linear-gradient(180deg, #0a3b8100 38%, #0a3b81 91%) !important;
+        background: linear-gradient(180deg, #0a3b8100 38%, #0a3b81 82%) !important;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -83,7 +92,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        bottom: -60px;
+        bottom: -16px;
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
@@ -93,6 +102,8 @@
         text-align: left;
         padding-left: 22px;
         border-left: 2px solid #EDCEA1;
+        white-space: nowrap;
+        color: #EDCEA1;
     }
 
     .bgMain ul.logo-center img {
@@ -103,4 +114,23 @@
         content: '';  
         
     } */
+}
+@media only screen and (max-width: 400px){
+    .bgMain:after {
+        background: linear-gradient(180deg, #0a3b8100 30%, #0a3b81 74%) !important;
+    }
+    .bgMain ul.logo-center {
+        bottom: -95px;
+    }
+}
+@media only screen and (min-width: 1900px){
+    .bgMain:after {
+        background: linear-gradient(180deg, #0a3b8100 30%, #0a3b81 81%) !important;
+    }
+    .bgMain ul.logo-center img {
+        max-width: 400px;
+    }
+    .bgMain ul.logo-center p {
+        font-size: 29px;
+    }
 }
