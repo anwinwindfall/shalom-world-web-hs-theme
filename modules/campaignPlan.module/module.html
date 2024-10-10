@@ -1,0 +1,14 @@
+<!-- module html  -->
+
+<div class="campaign_plan">
+{% set arraylength = module.content|length %}
+    {% for item in module.content %}
+    <h4>{{ item.title }}</h4>
+    {% if arraylength == loop.index %}
+        {%set class = "last-prayer"%}
+     {% endif %}
+    <p class={{class}}>
+        {{ item.prayer_content }}
+    </p>
+    {% endfor %}
+  </div>
