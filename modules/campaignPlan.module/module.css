@@ -1,6 +1,6 @@
 
 .conatainer_campaignPlan {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
     text-align: center;
 
@@ -11,12 +11,14 @@
     font-weight: 400;
     font-size: 20px;
     margin: 0px !important;
-    font-family: 'inter'
+    font-family: 'inter';
+        padding-bottom: 3%;
 }
 
 .campaign_plan {
     background-color: #FFFFFF;
     max-width: 400px;
+    width: 80%;
     margin: 0 auto;
     padding: 30px 30px 28px 30px;
     border-top-left-radius: 16px;
@@ -54,7 +56,8 @@
 
 @media only screen and (min-width: 768px) {
     .conatainer_campaignPlan {
-    max-width: 1000px;
+    /* max-width: 1000px; */
+        width: 80%;
 }
     .campaign_plan {
         background: #FFFFFF;
