@@ -9,16 +9,16 @@
 .campaignPlan_title h4{
     color: #FFFFFF;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
     margin: 0px !important;
     font-family: 'inter';
-        padding-bottom: 3%;
+    padding-bottom: 3%;
 }
 
 .campaign_plan {
     background-color: #FFFFFF;
-    max-width: 400px;
-    width: 80%;
+    /* max-width: 400px; */
+        width: 65%;
     margin: 0 auto;
     padding: 30px 30px 28px 30px;
     border-top-left-radius: 16px;
@@ -70,12 +70,19 @@
     .campaign_plan h4 {
         color: #0A3B81;
         font-family: Libre Baskerville;
-        font-size: 24px;
+        font-size: 24px !important;
         font-weight: 700;
         text-align: left;
     }
     .campaign_plan p {
         padding-top: 20px;
         /* max-width: 772px; */
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+    .campaign_plan h4 {
+
+        font-size: 22px !important;
+
     }
 }

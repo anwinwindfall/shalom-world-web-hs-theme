@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.banner-content .text {
+    display: none;
+}
+
+.mob_logo {
+    display: none;
+}
 .banner_a_style {
     position: relative;
     width: 100%;
@@ -53,7 +60,7 @@
 }
 
 .banner_a_style .banner-content .logo {
-    width: 200px;
+    width: 500px;
     margin-right: 20px;
 
 }
@@ -92,7 +99,19 @@
         text-align: center;
     }
 
+                .banner-content .text {
+                    display: block;
+                }
+        
+                .mob_logo {
+                    display: block;
+                    width: 250px;
+                }
 
+                .logo {
+                    display: none;
+        
+                }
 
     .banner_a_style {
         height: 300px;
