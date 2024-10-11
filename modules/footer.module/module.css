@@ -6,6 +6,15 @@
     padding: 24px 0px;
 }
 
+.footer span {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFFB2;
+}
 .footer a {
     text-decoration: none;
     font-family: Inter;
@@ -16,6 +25,9 @@
     color: #FFFFFFB2;
 }
 
+.footer span:first-child {
+    padding-bottom: 11px;
+}
 .footer a:first-child {
     padding-bottom: 11px;
 }
