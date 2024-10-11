@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // API functions (same as before)
   async function checkEmail(formData) {
-    const apiUrl = `https://landing.shalomworld.org/_hcms/api/sw/search-contact?email=${formData.email}`;
+    const apiUrl = `https://prayer.shalomworld.org/_hcms/api/sw/search-contact?email=${formData.email}`;
     const response = await fetch(apiUrl, {
       method: "GET",
       headers: {
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   async function createNewContact(formData) {
-    const apiUrl = `https://landing.shalomworld.org/_hcms/api/sw/create-contact`;
+    const apiUrl = `https://prayer.shalomworld.org/_hcms/api/sw/create-contact`;
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   async function updateNewContact(formData, contactId) {
-    const apiUrl = `https://landing.shalomworld.org/_hcms/api/sw/update-contact?contactId=${contactId}`;
+    const apiUrl = `https://prayer.shalomworld.org/_hcms/api/sw/update-contact?contactId=${contactId}`;
     const response = await fetch(apiUrl, {
       method: "PATCH",
       headers: {
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   async function createUserInteraction(formData) {
-    const apiUrl = `https://landing.shalomworld.org/_hcms/api/sw/create-user-interaction`;
+    const apiUrl = `https://prayer.shalomworld.org/_hcms/api/sw/create-user-interaction`;
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   async function createAssociation(contactId, userInteractionId) {
-    const apiUrl = `https://landing.shalomworld.org/_hcms/api/sw/associate-contact-interaction?contactId=${contactId}&userInteractionId=${userInteractionId}`;
+    const apiUrl = `https://prayer.shalomworld.org/_hcms/api/sw/associate-contact-interaction?contactId=${contactId}&userInteractionId=${userInteractionId}`;
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
