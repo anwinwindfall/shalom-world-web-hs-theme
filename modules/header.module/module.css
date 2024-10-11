@@ -178,7 +178,8 @@
   
   /* Active state - When the menu is toggled */
   .mobile-nav.active {
-  height: 234px;
+    height: 170px;
+      /* height: 234px; */
   /* Expands to its full height */
     opacity: 1;
     /* Fades in */
