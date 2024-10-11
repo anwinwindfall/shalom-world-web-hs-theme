@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
           await createAssociation(createNewContactData?.id, userInteractionData?.id);
   
           hideLoader();
-          showSuccessPopup("New contact created and interaction associated!");
+          showSuccessPopup("Form submission was successful!");
         } else {
           hideLoader();
           showErrorPopup("Failed to create new contact. Please try again.");
