@@ -31,7 +31,7 @@ body {
 #hours,
 #days {
     width: 130px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 #countdown {
     background-color: #000;
