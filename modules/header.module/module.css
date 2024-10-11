@@ -64,7 +64,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 29.05px;
-    text-align: left;
+   text-align: left;
     position: relative;
   }
   
@@ -97,6 +97,40 @@
   
   /* Hamburger Menu Styles */
   .hamburger {
+
+  text-align: left;
+  position: relative;
+}
+
+.nav-links a {
+  color: #0A3B81;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29.05px;
+  text-align: left;
+}
+
+.navbar .live-badge {
+  position: absolute;
+  top: -31px;
+  left: 74px;
+  background: #C23A3B;
+  /* border: 5px solid green; */
+  color: white;
+  padding: 0px 4px 0px 4px;
+  font-size: 12px;
+  border-radius: 2px 0px 0px 0px;
+  font-weight: bold;
+  opacity: 0px;
+
+}
+
+
+
+/* Hamburger Menu Styles */
+.hamburger {
   display: none;
     /* Hidden by default, shown only in mobile */
     flex-direction: column;
@@ -213,6 +247,7 @@
     display: block;
   }
 }
+
 .nav-links a:hover::after {
   content: '';
   position: absolute;
@@ -239,4 +274,28 @@
   text-decoration: none;
   /* color: black; */
   position: relative;
+
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+    50% {
+      opacity: 0.9;
+    }
+    }
+
+.navbar .live-badge,
+.mobile-live-badge {
+  background: #C23A3B;
+  color: white;
+  padding: 4px 8.5px;
+  font-size: 12px;
+  border-radius: 2px;
+  font-weight: bold;
+  animation: blink 3s infinite;
+
 }

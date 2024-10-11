@@ -1,48 +1,88 @@
 <!-- module html  -->
 
-    <div class="dedication-prayer">
-        <div class="top">
-            <h4>Dedication Prayer</h4>
-            <p>
-                O Immaculate Heart of Mary, we humbly come before you as the presidential election in November, draws
-                near.<br /><br/>
+<div class="dedication-prayer">
+    <div class="top">
+        <h4>Dedication Prayer</h4>
+        <p>
+            O Immaculate Heart of Mary, we humbly come before you as the presidential election in November, draws
+            near.<br /><br/>
 
-                We entrust our nation, the United States of America, to your Immaculate Heart. Intercede for us, dear
-                Mother, that all voters may be guided by wisdom and discernment. May they choose leaders who reflect
-                justice, compassion, and integrity.<br /><br/>
+            We entrust our nation, the United States of America, to your Immaculate Heart. Intercede for us, dear
+            Mother, that all voters may be guided by wisdom and discernment. May they choose leaders who reflect
+            justice, compassion, and integrity.<br /><br/>
 
-                We pray for healing and unity among the people of this great nation. Help us to overcome division and
-                discord, fostering a spirit of love and cooperation. May your maternal guidance inspire us to prioritize
-                the common good, to seek peace, and to promote justice for all.<br /><br/>
+            We pray for healing and unity among the people of this great nation. Help us to overcome division and
+            discord, fostering a spirit of love and cooperation. May your maternal guidance inspire us to prioritize
+            the common good, to seek peace, and to promote justice for all.<br /><br/>
 
-                As we face this pivotal moment in our history, we ask that your Immaculate Heart may shine a light upon
-                our paths. Protect our democracy and lead us toward a future filled with hope and prosperity. Bring us
-                closer to your Son, Jesus Christ, and to a deeper commitment to serving one another. O Mary Immaculate,
-                pray for us. Amen.<br /><br/>
-            </p>
-        </div>
-       
-        
+            As we face this pivotal moment in our history, we ask that your Immaculate Heart may shine a light upon
+            our paths. Protect our democracy and lead us toward a future filled with hope and prosperity. Bring us
+            closer to your Son, Jesus Christ, and to a deeper commitment to serving one another. O Mary Immaculate,
+            pray for us. Amen.<br /><br/>
+        </p>
     </div>
-    <div class="form">
-    <form>
-        <div class="name">
-            <div class="form-element">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname">
-            </div>
-            <div class="form-element">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname">
-            </div>
+</div>
+
+<div class="form">
+<form  id="loginForm" >
+    <div class="name">
+        <div class="form-element">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstName">
         </div>
         <div class="form-element">
-            <label for="email">Email </label><br>
-            <input type="email" id="email" name="email">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastName">
         </div>
-        <br><br>
-        <a class="submit-btn">Dedicate and Sign-In</a>
-        
-    </form>
-    <img class="country-flag" src="https://www.shalomworld.ca/hubfs/US%20Election%20Prayer%20Page%20Assets/Prayer%20Board/country.svg" alt="image"/>
+    </div>
+    <div class="form-element">
+        <label for="email">Email </label><br>
+        <input type="email" id="email" name="email">
+    </div>
+    <br><br>
+   <div class="submit-button"><button type="submit" class="submit-btn">Dedicate and Sign-In</button></div>
+    
+</form>
+  <!-- Error Popup -->
+<!--   <div id="errorPopup" class="overlay" style="display: none;">
+<div class="popup">
+  <div class="cross"><div>x</div></div>
+  <div class="content" id="errorMessage">Error Message</div>
+  <a id="closeErrorOk" class="close" onclick="handleErrorOk()">OK</a>
+</div>
+</div> -->
+  
+
+<div id="errorPopup" class="overlay" style="display: none;">
+<div class="popup">
+  <div class="cross">
+    <div> <img src="https://www.shalomworld.ca/hubfs/US%20Election%20Prayer%20Page%20Assets/Prayer%20Board/warning-sign-svgrepo-com.svg" alt="Image" /></div>
+  </div>
+  <div class="warning-content">
+    <div class="content">
+      <h4>Warning!</h4>
+      <div id="errorMessage" class="content-text">Error message goes here</div>
+    </div>
+    <a id="closeErrorOk"  class="close"onclick="handleErrorOk()">OK</a>
+  </div>
+</div>
+</div>
+
+
+<!-- Success Popup -->
+<div id="successPopup" class="alert success" style="display: none;">
+<span   id="closeSuccess" class="closebtn" onclick="handleCloseSuccess()">&times;</span>  
+<p id="successMessage"><strong>Success!</strong><br/>Your submission was successful.</p>
+</div>
+
+<!-- Loader -->
+<div id="loader" class="loader-container" style="display: none;">
+<div class="loader"></div>
+<div class="loader-messages">
+  <div class="message" id="message1">Loading, please wait...</div>
+  <div class="message" id="message2">This may take a moment...</div>
+</div>
+</div>
+
+<img class="country-flag" src="https://www.shalomworld.ca/hubfs/US%20Election%20Prayer%20Page%20Assets/Prayer%20Board/country.svg" alt="image"/>
 </div>
