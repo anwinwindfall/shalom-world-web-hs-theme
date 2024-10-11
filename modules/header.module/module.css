@@ -300,5 +300,5 @@
   font-size: 12px;
   border-radius: 2px;
   font-weight: bold;
-  animation: blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
