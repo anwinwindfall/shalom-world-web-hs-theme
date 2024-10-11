@@ -100,11 +100,11 @@
     }
 
         .banner_a_style .banner-content .text {
-                    display: block;
+                    display: block !important;
                 }
         
                                 .banner_a_style .mob_logo {
-                    display: block;
+                    display: block !important;
                     width: 250px;
                 }
 
