@@ -6,73 +6,73 @@
     margin-top: 100px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-}
-
-.dedication-prayer h4 {
+  }
+  
+  .dedication-prayer h4 {
     color: #0A3B81;
     /* font-family: "Inter", serif; */
-        font-family: "Libre Baskerville", serif;
-        font-size: 20px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 20px;
     font-weight: 700;
     text-align: left;
     margin: 0 auto;
     max-width: 300px;
-}
-
-.dedication-prayer p {
+  }
+  
+  .dedication-prayer p {
     color: #030303;
-font-family: "Libre Baskerville", serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 17px;
     font-weight: 400;
     text-align: left;
     padding-top: 16px;
     margin: 0 auto;
     max-width: 300px;
-
-}
-
-@media (min-width:769px) and (max-width:1440px) {
+  
+  }
+  
+  @media (min-width:769px) and (max-width:1440px) {
     .dedication-prayer {
-        max-width: 700px !important;
-        padding: 70px !important;
+      max-width: 700px !important;
+      padding: 70px !important;
     }
-}
-
-@media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 768px) {
     .dedication-prayer {
-        background: #FFFFFF;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 70px 0px;
-        margin-top: 100px;
+      background: #FFFFFF;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 70px 0px;
+      margin-top: 100px;
     }
-
+  
     .dedication-prayer h4 {
-        color: #0A3B81;
-        /* font-family: "Inter", serif; */
-            font-family: "Libre Baskerville", serif;
-        font-size: 55px;
-        font-weight: 400;
-        text-align: left;
-        max-width: 660px;
-        margin: 0 auto;
+      color: #0A3B81;
+      /* font-family: "Inter", serif; */
+      font-family: "Libre Baskerville", serif;
+      font-size: 55px;
+      font-weight: 400;
+      text-align: left;
+      max-width: 660px;
+      margin: 0 auto;
     }
-
+  
     .dedication-prayer p {
-       padding-top: 66px;
-        /* max-width: 772px; */
-        max-width: 660px;
-        margin: 0 auto;
-        /* font-family: Inter; */
-            font-family: "Libre Baskerville", serif;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 34.72px;
-        text-align: left;
+      padding-top: 66px;
+      /* max-width: 772px; */
+      max-width: 660px;
+      margin: 0 auto;
+      /* font-family: Inter; */
+      font-family: "Libre Baskerville", serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 34.72px;
+      text-align: left;
     }
-}
-
-.form {
+  }
+  
+  .form {
     background: #ecf0f5;
     max-width: 400px;
     margin: 0 auto;
@@ -81,19 +81,19 @@ font-family: "Libre Baskerville", serif;
     border-bottom-right-radius: 16px;
     margin-bottom: 83px;
     position: relative;
-}
-form{
+  }
+  form{
     margin: 0 auto;
     max-width: 300px;
-}
-
-.form .name {
+  }
+  
+  .form .name {
     display: flex;
     gap: 15px;
     padding-bottom: 13px;
-}
-
-.submit-btn {
+  }
+  
+  .submit-btn {
     color: #FFFFFF;
     background-color: #C23A3B;
     padding: 13px 39px;
@@ -107,118 +107,408 @@ form{
     font-weight: 600;
     text-align: center;
     color: #FFFFFF;
-}
-
-.form-element {
+    border: none;
+  }
+  div.submit-button {
+    display: flex;
+    justify-content: center;
+  }
+  .form-element {
     width: 100%;
-}
-
-input {
+  }
+  
+  input {
     width: 100%;
     height: 38px;
     box-sizing: border-box;
     border: 1px solid #0A3B8199;
     background-color: #FFFFFF;
     border-radius: 8px;
-}
-
-label {
+  }
+  
+  label {
     font-family: Inter, sans-serif;
     font-size: 20px;
     font-weight: 500;
     text-align: left;
     color: #0A3B81;
-}
-
-.country-flag {
+  }
+  
+  .country-flag {
     position: absolute;
     top: 100%;
     transform: translate(-50%, -50px);
     left: 50%;
     width: 100px;
     height: 100px;
-}
-
-/* Media Query for screens between 769px and 1440px */
-@media (min-width: 769px) and (max-width: 1440px) {
+  }
+  
+  /* Media Query for screens between 769px and 1440px */
+  @media (min-width: 769px) and (max-width: 1440px) {
     .form {
-        max-width: 700px;
-        padding: 70px;
+      max-width: 700px;
+      padding: 70px;
     }
     .country-flag {
-        position: absolute;
-        top: 100%;
-        transform: translate(-50%, -50px);
-        left: 50%;
-        width: 100px;
-        height: 100px;
+      position: absolute;
+      top: 100%;
+      transform: translate(-50%, -50px);
+      left: 50%;
+      width: 100px;
+      height: 100px;
     }
     form{
-        max-width: 660px;
-        margin: 0 auto;
-}
-}
-
-/* Media Query for screens larger than 1440px */
-@media (min-width: 1441px) {
+      max-width: 660px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Media Query for screens larger than 1440px */
+  @media (min-width: 1441px) {
     .form {
-        max-width: 1000px;
-        padding: 70px 0px 144px 0px;
-        margin-bottom: 300px;
+      max-width: 1000px;
+      padding: 70px 0px 144px 0px;
+      margin-bottom: 300px;
     }
     form{
-            max-width: 660px;
-            margin: 0 auto;
+      max-width: 660px;
+      margin: 0 auto;
     }
     .form .name {
-        padding-bottom: 36px;
+      padding-bottom: 36px;
     }
     .country-flag {
-        position: absolute;
-        top: 100%;
-        transform: translateY(-116px);
-        transform: translate(-50%, -75px);
-        left: 50%;
-        width: 150px;
-        height: 150px;
+      position: absolute;
+      top: 100%;
+      transform: translateY(-116px);
+      transform: translate(-50%, -75px);
+      left: 50%;
+      width: 150px;
+      height: 150px;
     }
     .submit-btn{
-        font-size: 27px;
-        padding: 20px 40px;
+      font-size: 27px;
+      padding: 20px 40px;
     }
     input{
-        height: 50px;
+      height: 50px;
     }
-}
-@media only screen and (max-width: 400px){
+  }
+  @media only screen and (max-width: 400px){
     .dedication-prayer {
-        max-width: 300px;
+      max-width: 300px;
     }
-    
+  
     .dedication-prayer h4 {
-        margin: 0 auto;
-        max-width: 200px;
+      margin: 0 auto;
+      max-width: 200px;
     }
-    
+  
     .dedication-prayer p {
-        margin: 0 auto;
-        max-width: 200px;
+      margin: 0 auto;
+      max-width: 200px;
     }
     .form {
-        max-width: 300px !important;
-        margin: 0 auto;
+      max-width: 300px !important;
+      margin: 0 auto;
     }
-    
+  
     form {
-        margin: 0 auto;
-        max-width: 200px !important;
+      margin: 0 auto;
+      max-width: 200px !important;
     }
     label{
-        font-size: 17px;
+      font-size: 17px;
     }
     .submit-btn{
-        font-size: 18px;
+      font-size: 11px;
     }
-    
-}
-
+  
+  }
+  
+  
+  
+  
+  /* Error Popup Styles */
+  /* .overlay {
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .popup {
+  background: #fff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  width: 25%;
+  height: 320px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  align-content: center;
+  justify-items: cente
+  }
+  
+  .popup .cross div {
+  border: 2px solid red;
+  border-radius: 50%;
+  color: red;
+  font-size: 55px;
+  height: 70px;
+  width: 70px;
+  line-height: unset;
+  }
+  
+  .popup .close {
+  background-color: #3085d6;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 7px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  }
+  div#errorMessage {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 37px 0;
+  }
+  .cross {
+  display: flex;
+  justify-content: center;
+  }
+  */
+  
+  /* Success Alert Styling */
+  .alert {
+    padding: 27px 20px;
+    color: white;
+    background-color: #4CAF50; 
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .alert p {
+    /*   text-align: center;
+    font-size :18px ; */
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 31px;
+    font-family: inter;
+    font-weight: 500;
+  }
+  
+  .alert .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .alert .closebtn:hover {
+    color: black;
+  }
+  
+  /* Loader Styles */
+  .loader-container {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Changed to fixed to cover the entire screen */
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  .loader-messages {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .message {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .message.show {
+    opacity: 1;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*  new Error Popup Styles */
+  .box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .overlay {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+  
+  .popup {
+    background: #fff;
+    border-radius: 12px;
+    margin: auto;
+    position: relative;
+    transition: all 5s ease-in-out;
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  
+  .warning-content {
+    padding: 25px;
+  }
+  
+  .warning-content h4 {
+    font-family: Roboto, sans-serif;
+    color: #2c394b;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 1.7vw, 3rem);
+  }
+  
+  .warning-content .content-text {
+    color: #6c6d77;
+    font-family: Roboto, sans-serif;
+    font-size: clamp(1rem, 1.1vw, 3rem);
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  
+  .cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f55555;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .cross div {
+    height: 70px;
+    width: 70px;
+  }
+  .cross div img{
+    max-width: 100%;
+  }
+  
+  .close {
+    background-color: #f55555;
+    border-radius: 5vmax;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .102);
+    color: #ffffff;
+    padding: 7px 25px;
+    text-decoration: none;
+    transition: all .2s;
+    font-size: clamp(.91rem, .95vw, 1.2rem);
+    cursor: pointer;
+  }
+  
+  .content {
+    max-height: 30%;
+    overflow: auto;
+    padding-bottom: 35px;
+    font-family: Roboto, sans-serif;
+    color: #333;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 1.2vw, 3rem);
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 700px) {
+    .box {
+      width: 70%;
+    }
+  
+    .popup {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .popup {
+      width: 30%;
+      max-width: 320px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .popup {
+      width: 80%;
+      max-width: 320px;
+    }
+  }
+  
+  
+  
