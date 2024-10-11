@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-.banner-content .text {
+.banner_a_style .banner-content .text {
     display: none;
 }
 
-.mob_logo {
+.banner_a_style .mob_logo {
     display: none;
 }
 .banner_a_style {
