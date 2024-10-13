@@ -178,7 +178,8 @@
   
   /* Active state - When the menu is toggled */
   .mobile-nav.active {
-  height: 234px;
+    height: 170px;
+      /* height: 234px; */
   /* Expands to its full height */
     opacity: 1;
     /* Fades in */
@@ -270,7 +271,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .mobile-nav-links a {
@@ -299,5 +300,5 @@
   font-size: 12px;
   border-radius: 2px;
   font-weight: bold;
-  animation: blink 1s infinite;
+  animation: blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

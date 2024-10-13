@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .virtual-chappel h1 {
@@ -31,7 +31,7 @@ body {
 #hours,
 #days {
     width: 130px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 #countdown {
     background-color: #000;

@@ -21,18 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
       email: document.querySelector('input[name="email"]').value.trim(),
     };
     
-    console.log("formData", formData);
+    // console.log("formData", formData);
   
     try {
       const checkEmailResponse = await checkEmail(formData);
-      console.log("checkEmailResponse", checkEmailResponse);
+      // console.log("checkEmailResponse", checkEmailResponse);
   
       if (checkEmailResponse.status === 200) {
         const emailCheckerData = await checkEmailResponse.json();
   
         if (emailCheckerData?.properties?.firstname === formData.firstName && emailCheckerData?.properties?.lastname === formData.lastName) {
           const updateContact = await updateNewContact(formData, emailCheckerData?.id.trim());
-          console.log("updateContact", updateContact);
+          // console.log("updateContact", updateContact);
   
           if (updateContact.ok) {
             const userInteractionResponse = await createUserInteraction(formData);
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
           await createAssociation(createNewContactData?.id, userInteractionData?.id);
   
           hideLoader();
-          showSuccessPopup("New contact created and interaction associated!");
+          showSuccessPopup("Form submission was successful!");
         } else {
           hideLoader();
           showErrorPopup("Failed to create new contact. Please try again.");
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showErrorPopup("An unexpected error occurred. Please try again.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      // console.error("Error:", error);
       hideLoader();
       showErrorPopup("An error occurred. Please try again.");
     }
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Functions to show/hide loader and popups
   function showLoader() {
-    console.log(" show loader started");
+    // console.log(" show loader started");
     document.getElementById("loader").style.display = "flex";
   
     const message1 = document.getElementById('message1');

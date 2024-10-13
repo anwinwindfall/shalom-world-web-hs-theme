@@ -1,45 +1,5 @@
-{% set visibility = 0%}
-{% require_js %}
-        <script>
-       
-const targetDate = new Date("Oct 11, 2024 12:32:00").getTime();
-// Convert to Eastern Time (ET)
-const options = {
-  timeZone: 'America/New_York', // Eastern Time Zone
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  timeZoneName: 'short'
-};
+{% set visibility = 0 %}
 
-const targetDate_timezone = new Intl.DateTimeFormat('en-US', options).format(targetDate);
-console.log(targetDate_timezone);
-const countdownInterval = setInterval(function () {
-
-    const now = new Date().getTime();
-    const distance = targetDate_timezone - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours;
-    document.getElementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds;
-
-    if (distance < 0) {
-        clearInterval(countdownInterval);
-        {% set visibility = 1%}
-    }
-}, 1000);
-        </script>
-{% end_require_js%}
 
 
 
@@ -84,7 +44,37 @@ const countdownInterval = setInterval(function () {
       </div>
 {% endif %}
 
-
+{% require_js %}
+        <script async>
+        window.onload = function() {
+        const targetDateEST = new Date("Oct 19, 2024 12:32:00").toLocaleString("en-US", { timeZone: "America/New_York" });
+        const targetDate = new Date(targetDateEST).getTime();
+        
+        const countdownInterval = setInterval(function () {
+        
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+        
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        
+        
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                {% set visibility = 1 %}
+            }
+        }, 1000);
+        
+}
+        </script>
+{% end_require_js%}
 
 
 
