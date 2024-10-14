@@ -1,11 +1,27 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+   "type": "group",
+   "id": "ce14511b-40b8-3e90-c92b-425a437d571a",
+   "label": "Footer Navigation Contents",
+   "children": [
+    {
+     "type": "text",
+     "id": "ec8b4d10-75fb-71fa-27ad-ffb22808f080",
+     "validation_regex": "",
+     "label": "Nav text",
+     "name": "nav_text",
+     "default": "24 hour Rosary Schedule"
+    },
+    {
+     "type": "text",
+     "id": "3f29669d-c7d7-4184-a3e7-a8d888db9451",
+     "validation_regex": "",
+     "label": "Nav link",
+     "name": "nav_link"
+    }
+   ],
+   "name": "footer_navigation_contents",
+   "default": [],
+   "occurrence": {}
   }
-]
+ ]
