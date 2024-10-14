@@ -1,15 +1,9 @@
 <!-- module html  -->
 <div class="prayerOfferedCampaigns">
+{% for item in module.footer_navigation_contents %}
     <div class="campaign-item">
-        <span>24 hour Rosary Schedule</span>
-        <button class="btn">Know More</button>
+        <span>{{ item.nav_text }}</span>
+        <button href={{ item.nav_link }} class="btn">Know More</button>
     </div>
-    <div class="campaign-item">
-        <span>Virtual Chapel <span class="live-tag">LIVE</span></span>
-        <button class="btn">Visit Now!</button>
-    </div>
-    <div class="campaign-item">
-        <span>One Month Prayer Campaign</span>
-        <button class="btn">Read More</button>
-    </div>
+{% endfor %}
 </div>
