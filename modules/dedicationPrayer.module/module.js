@@ -29,30 +29,39 @@ document.addEventListener("DOMContentLoaded", () => {
   
       if (checkEmailResponse.status === 200) {
         const emailCheckerData = await checkEmailResponse.json();
-  
-        if (emailCheckerData?.properties?.firstname === formData.firstName && emailCheckerData?.properties?.lastname === formData.lastName) {
-          const updateContact = await updateNewContact(formData, emailCheckerData?.id.trim());
-          // console.log("updateContact", updateContact);
-  
-          if (updateContact.ok) {
-            const userInteractionResponse = await createUserInteraction(formData);
-            const userInteractionData = await userInteractionResponse.json();
-            await createAssociation(emailCheckerData?.id.trim(), userInteractionData?.id);
-  
-            // Hide the loader
-            hideLoader();
-  
-            // Show success popup
-            showSuccessPopup("Your submission was successful.");
-          } else {
-            // Hide the loader
-            hideLoader();
-            showErrorPopup("Failed to update contact. Please try again.");
-          }
-        } else {
+          const userInteractionResponse = await createUserInteraction(formData);
+          const userInteractionData = await userInteractionResponse.json();
+          await createAssociation(emailCheckerData?.id.trim(), userInteractionData?.id);
+
+          // Hide the loader
           hideLoader();
-          showErrorPopup("Another name exists with the same email ID. Please try again with a different email.");
-        }
+
+          // Show success popup
+          showSuccessPopup("Your submission was successful.");
+       
+        // if (emailCheckerData?.properties?.firstname === formData.firstName && emailCheckerData?.properties?.lastname === formData.lastName) {
+        //   const updateContact = await updateNewContact(formData, emailCheckerData?.id.trim());
+        //   // console.log("updateContact", updateContact);
+  
+        //   if (updateContact.ok) {
+        //     const userInteractionResponse = await createUserInteraction(formData);
+        //     const userInteractionData = await userInteractionResponse.json();
+        //     await createAssociation(emailCheckerData?.id.trim(), userInteractionData?.id);
+  
+        //     // Hide the loader
+        //     hideLoader();
+  
+        //     // Show success popup
+        //     showSuccessPopup("Your submission was successful.");
+        //   } else {
+        //     // Hide the loader
+        //     hideLoader();
+        //     showErrorPopup("Failed to update contact. Please try again.");
+        //   }
+        // } else {
+        //   hideLoader();
+        //   showErrorPopup("Another name exists with the same email ID. Please try again with a different email.");
+        // }
       } else if (checkEmailResponse.status === 404) {
         const createNewContactResponse = await createNewContact(formData);
         if (createNewContactResponse.ok) {
