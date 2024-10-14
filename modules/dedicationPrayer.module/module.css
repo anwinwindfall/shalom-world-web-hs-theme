@@ -63,6 +63,8 @@
     text-align: left;
     /* max-width: 660px; */
     margin: 0 auto;
+    padding-inline: 14%;
+      font-weight: 700;
   }
 
   .dedication-prayer p {
@@ -76,7 +78,7 @@
     font-weight: 400;
     line-height: 1.4em;
     text-align: left;
-    padding-inline: 5%;
+    padding-inline: 14%;
       font-size: 1.7rem;
   }
 }
@@ -132,7 +134,7 @@ div.submit-button {
 
 input {
   width: 100%;
-  height: 70px;
+  height: 90px;
   box-sizing: border-box;
   border: 1px solid #0a3b8199;
   background-color: #ffffff;
@@ -146,6 +148,8 @@ label {
   font-weight: 500;
   text-align: left;
   color: #0a3b81;
+  display: inline-block;
+    padding-bottom: 2%;
 }
 
 .country-flag {
@@ -209,7 +213,7 @@ label {
     padding: 20px 40px;
   }
   input {
-    height: 50px;
+    height: 90px;
     padding: 10px;
   }
 }
