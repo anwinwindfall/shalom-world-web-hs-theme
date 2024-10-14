@@ -1,13 +1,18 @@
 <!-- module html  -->
 <div class="prayerOfferedCampaigns">
 {% for item in module.footer_navigation_contents %}
-    {% set arraylength = module.content|length %}
+    {% set arraylength = module.footer_navigation_contents|length %}
         {% if arraylength == loop.index %}
             {%set class = "last_nav"%}
          {% endif %}
     <div class="campaign-item {{class}}">
-        <span>{{ item.nav_text }}</span>
-        <button href={{ item.nav_link }} class="btn">Know More</button>
+        <div class="campaign-wrapper">
+        
+            <span class="campaign-text">{{ item.nav_text }}</span>
+            <span class="live-label">Live</span>
+        </div>
+        <a href={{ item.nav_link }} class="btn">{{ item.button_text }}</a>
     </div>
-{% endfor %}
-</div>
+    {% endfor %}
+    </div>
+    <!--  -->

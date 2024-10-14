@@ -18,9 +18,12 @@
   
   /* Logo Styling */
   .logo img {
-    width: 150px;
+    width: 180px;
     height: auto;
     margin-left: 17%;
+    @media screen and (max-width:768px) {
+        width: 150px;
+      }
   }
 
 
