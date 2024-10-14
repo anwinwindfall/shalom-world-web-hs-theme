@@ -40,6 +40,7 @@
     line-height: 24.2px;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 10%;
 
 }
 
@@ -111,7 +112,7 @@
 
     .bgMain ul.logo-center img {
         padding-right: 24px;
-        max-width: 400px;
+        max-width: 700px;
     }
 
     /* .bgMain ul.logo-center p:before {
