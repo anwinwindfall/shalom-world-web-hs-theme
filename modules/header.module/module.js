@@ -6,7 +6,7 @@ const logo = document.querySelector('.header-box .logo')
 
 // Open mobile nav
 menuToggle.addEventListener('click', () => {
-    mobileNav.classList.add('active'); // Slide down and become visible
+    mobileNav.classList.toggle('active'); // Slide down and become visible
 });
 
 // Close mobile nav
