@@ -263,6 +263,17 @@
   transition: width 0.3s;
 }
 
+.nav-link-active{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: 100%;
+  height: 4px;
+  background-color: #0A3B8180;
+  transition: width 0.3s;
+}
+
 .nav-links a.active::after,
 .nav-links a:focus::after {
   content: '';

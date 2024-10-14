@@ -119,3 +119,15 @@
     }
   });
 })();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+const currentPage = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav-links a');
+navLinks.forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('nav-link-active');
+  }
+});
+})
+
