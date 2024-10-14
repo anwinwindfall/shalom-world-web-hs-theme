@@ -81,14 +81,14 @@
     font-size: 12px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     .prayerOfferedCampaigns {
         display: block;
     }
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 930px) {
     .prayerOfferedCampaigns {
         display: none;
     }

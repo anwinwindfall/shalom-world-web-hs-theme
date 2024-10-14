@@ -1,11 +1,18 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
-    "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+  "type": "text",
+  "id": "5fe44e64-ce52-1d41-ee2a-74b4fdc5eaf4",
+  "validation_regex": "",
+  "label": "Date and time",
+  "name": "date_and_time",
+  "default": "Oct 19, 2024 12:32:00"
+},
+{
+  "type": "text",
+  "id": "24ece55a-02f3-804d-01ca-334ce2041c38",
+  "validation_regex": "",
+  "label": "Title",
+  "name": "title",
+  "default": "Virtual Chapel"
   }
 ]
