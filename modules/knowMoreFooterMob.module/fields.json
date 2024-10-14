@@ -45,17 +45,17 @@
      "display": "radio",
      "choices": [
       [
-       "True",
+       "true",
        "True"
       ],
       [
-       "False",
+       "false",
        "False"
       ]
      ],
      "label": "Is Live?",
      "name": "is_live_",
-     "default": "False"
+     "default": "false"
     }
    ],
    "default": [],

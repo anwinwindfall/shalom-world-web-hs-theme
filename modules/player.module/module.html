@@ -6,62 +6,63 @@
     <div id="countdown" class="timer">
         <h2>BEGINNING IN</h2>
         <div>
-        <div class="countdown-segment">
-            <span id="days"></span>
-            <small>Days</small>
+            <div class="countdown-segment">
+                <span id="days"></span>
+                <small>Days</small>
+            </div>
+            <div class="countdown-segment">
+                <span id="hours"></span>
+                <small>Hours</small>
+            </div>
+            <div class="countdown-segment">
+                <span id="minutes"></span>
+                <small>Mins</small>
+            </div>
+            <div class="countdown-segment">
+                <span id="seconds"></span>
+                <small>Secs</small>
+            </div>
         </div>
-        <div class="countdown-segment">
-            <span id="hours"></span>
-            <small>Hours</small>
-        </div>
-        <div class="countdown-segment">
-            <span id="minutes"></span>
-            <small>Mins</small>
-        </div>
-        <div class="countdown-segment">
-            <span id="seconds"></span>
-            <small>Secs</small>
-        </div>
-        </div>
-        </div>
-        </div>
+    </div>
+</div>
 <!-- Video Player -->
 <div class="player_container__" id="video-player" style="visibility: hidden; position: absolute;">
     {{ module.embed_code }}
 </div>
 {% require_js %}
 <script async>
-                window.onload = function () {
-                    const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
-                        timeZone: "America/New_York",
-                    });
-                    const targetDate = new Date(targetDateEST).getTime();
+    window.onload = function () {
+        const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
+            timeZone: "America/New_York",
+        });
+        const targetDate = new Date(targetDateEST).getTime();
 
-                    const countdownInterval = setInterval(function () {
-                    const now = new Date().getTime();
-                    const distance = targetDate - now;
+        const countdownInterval = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
 
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                    document.getElementById("days").textContent = days;
-                    document.getElementById("hours").textContent = hours;
-                    document.getElementById("minutes").textContent = minutes;
-                    document.getElementById("seconds").textContent = seconds;
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
 
-                    if (distance < 0) {
-                        clearInterval(countdownInterval);
+            if (distance < 0) {
+                clearInterval(countdownInterval);
 
-                    // Hide countdown and show video player
-                    document.getElementById("countdown-wrapper").style.display = "none";
-                    const videoPlayer = document.getElementById("video-player");
-                    videoPlayer.style.visibility = "visible";
-                    videoPlayer.style.position = "static";
-                }
+                // Hide countdown and show video player
+                document.getElementById("countdown-wrapper").style.display = "none";
+                const videoPlayer = document.getElementById("video-player");
+                videoPlayer.style.visibility = "visible";
+                videoPlayer.style.position = "static";
+            }
 
-                }, 1000);
-            };
-        </script>
+        }, 1000);
+
+    }
+</script>
 {% end_require_js %}
