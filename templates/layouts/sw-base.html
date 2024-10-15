@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
     {% endif %}
     {% if private_content == true %}
-       <script src=""></script>
+       <script src="{{ get_asset_url('/shalom_world_web_theme/js/private_content.js') }}" defer></script>
     {% endif %}
     <meta name="description" content="{{ page_meta.meta_description }}" />
     {{ require_css(get_asset_url('/shalom_world_web_theme/css/US
