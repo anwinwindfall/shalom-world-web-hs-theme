@@ -129,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   function showSuccessPopup(message) {
+    localStorage.setItem("sw_election_campaign_signed_in", "true");
     window.location.href="https://prayer.shalomworld.org/presidential-election/prayer-campaign"
     document.getElementById("successMessage").innerHTML = `<strong>Success!</strong><br/>${message}`;
     document.getElementById("successPopup").style.display = "block";
