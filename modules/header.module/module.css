@@ -315,3 +315,23 @@
   font-weight: bold;
   animation: blink 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+.sign-in-btn {
+  background-color: #C23A3B;
+  border-radius: 8px;
+  padding-block: 10px;
+  padding-inline: 15px;
+  color: white;
+  font-family: 'Inter';
+  text-decoration: none;
+}
+
+.section-profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon span {
+  font-family: 'Inter';
+}
