@@ -2,7 +2,7 @@
     <h1>{{ module.title }}</h1>
 </div>
 <!-- Countdown Wrapper -->
-<div class="wrapper_video" id="countdown-wrapper">
+<div class="wrapper_video" id="countdown-wrapper" style="display: none;">
     <div id="countdown" class="timer">
         <h2>BEGINNING IN</h2>
         <div>
@@ -25,22 +25,27 @@
         </div>
     </div>
 </div>
+
 <!-- Video Player -->
 <div class="player_container__" id="video-player" style="visibility: hidden; position: absolute;">
     {{ module.embed_code }}
 </div>
+
 {% require_js %}
 <script async>
-    window.onload = function () {
-        const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
-            timeZone: "America/New_York",
-        });
-        const targetDate = new Date(targetDateEST).getTime();
+    const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
+        timeZone: "America/New_York",
+    });
+    const targetDate = new Date(targetDateEST).getTime();
 
-        const countdownInterval = setInterval(function () {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
+    const countdownInterval = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
 
+        if (distance > 0) {
+            // Show countdown when it's time to start it
+            document.getElementById("countdown-wrapper").style.display = "block";
+            document.getElementById("loader").style.display = "block";
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -50,19 +55,17 @@
             document.getElementById("hours").textContent = hours;
             document.getElementById("minutes").textContent = minutes;
             document.getElementById("seconds").textContent = seconds;
+        }
 
-            if (distance < 0) {
-                clearInterval(countdownInterval);
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            // Hide countdown and show video player
+            document.getElementById("countdown-wrapper").style.display = "none";
+            const videoPlayer = document.getElementById("video-player");
+            videoPlayer.style.visibility = "visible";
+            videoPlayer.style.position = "static";
+        }
 
-                // Hide countdown and show video player
-                document.getElementById("countdown-wrapper").style.display = "none";
-                const videoPlayer = document.getElementById("video-player");
-                videoPlayer.style.visibility = "visible";
-                videoPlayer.style.position = "static";
-            }
-
-        }, 1000);
-
-    }
+    }, 1000);
 </script>
 {% end_require_js %}

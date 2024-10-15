@@ -132,9 +132,9 @@
     .bgMain:after {
         background: linear-gradient(180deg, #0a3b8100 30%, #0a3b81 81%) !important;
     }
-    .bgMain ul.logo-center img {
+    /* .bgMain ul.logo-center img {
         max-width: 500px;
-    }
+    } */
     .bgMain ul.logo-center p {
         font-size: 29px;
     }

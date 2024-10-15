@@ -78,6 +78,9 @@ body {
 .player_container__ {
     width: 100%;
     padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive */
@@ -169,4 +172,13 @@ body {
 }
 .player_container__ {
     padding-bottom: 7% !important;
+}
+
+.youtube_video{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.row-fluid .dnd_area-row-2-padding{
+    padding-bottom: 0px !important;
 }

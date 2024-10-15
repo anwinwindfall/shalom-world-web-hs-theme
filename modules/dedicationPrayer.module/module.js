@@ -35,10 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Hide the loader
           hideLoader();
-
+            console.log("200+5");
+            
           // Show success popup
           showSuccessPopup("Your submission was successful.");
-       
+          
+          
+
         // if (emailCheckerData?.properties?.firstname === formData.firstName && emailCheckerData?.properties?.lastname === formData.lastName) {
         //   const updateContact = await updateNewContact(formData, emailCheckerData?.id.trim());
         //   // console.log("updateContact", updateContact);
@@ -69,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const userInteractionResponse = await createUserInteraction(formData);
           const userInteractionData = await userInteractionResponse.json();
           await createAssociation(createNewContactData?.id, userInteractionData?.id);
-  
           hideLoader();
           showSuccessPopup("Form submission was successful!");
         } else {
@@ -81,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showErrorPopup("An unexpected error occurred. Please try again.");
       }
     } catch (error) {
-      // console.error("Error:", error);
+      console.error("Error:", error);
       hideLoader();
       showErrorPopup("An error occurred. Please try again.");
     }
@@ -127,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   function showSuccessPopup(message) {
+    window.location.href="https://prayer.shalomworld.org/presidential-election/prayer-campaign"
     document.getElementById("successMessage").innerHTML = `<strong>Success!</strong><br/>${message}`;
     document.getElementById("successPopup").style.display = "block";
     document.getElementById("loginForm").style.display = "none";

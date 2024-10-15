@@ -15,5 +15,5 @@ closeIcon.addEventListener('click', () => {
 });
 
 logo.addEventListener('click', () => {
-    window.location.href = 'https://swprayer.org/'
+    window.location.href = 'https://prayer.shalomworld.org/prayer-campaign';
 })

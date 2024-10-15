@@ -9,7 +9,7 @@
         <div class="campaign-wrapper">
         
             <span class="campaign-text">{{ item.nav_text }}</span>
-            {% if {{ item.is_live_ }} = true %}
+            {% if item.is_live_ == true %}
                 <span class="live-label">Live</span>
             {% endif %}
             

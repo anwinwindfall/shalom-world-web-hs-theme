@@ -1,6 +1,7 @@
 
 .conatainer_campaignPlan {
     /* max-width: 400px; */
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 
@@ -13,13 +14,17 @@
     margin: 0px !important;
     font-family: 'inter';
     padding-bottom: 3%;
+    @media only screen and (max-width: 768px) {
+        padding-top: 20px;
+        font-size: 22px;
+    }
 }
 
 .campaign_plan {
     background-color: #FFFFFF;
     /* max-width: 400px; */
     margin: 0 auto;
-    padding: 30px 30px 28px 30px;
+    padding: 30px 30px 30px 30px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -52,29 +57,36 @@
     margin: 0px !important;
     border: 0px !important;
 }
-
+@media only screen and (min-width: 930px) {
+    .conatainer_campaignPlan {
+    padding-bottom: 150px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .conatainer_campaignPlan {
     /* max-width: 1000px; */
         width: 80%;
+        padding-top: 50px;
+       
 }
     .campaign_plan {
         background: #FFFFFF;
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 0 auto;
-        padding: 70px 90px;
+        padding: 90px 110px;
         margin-top: 40px;
     }
 
     .campaign_plan h4 {
         color: #0A3B81;
-        font-family: Libre Baskerville;
+        font-family: 'inter';
         font-size: 24px !important;
         font-weight: 700;
         text-align: left;
     }
     .campaign_plan p {
         padding-top: 20px;
+        line-height: 1.4em;
         /* max-width: 772px; */
     }
 }
@@ -84,4 +96,8 @@
         font-size: 22px !important;
 
     }
+}
+
+.row-fluid .dnd_area-row-2-padding{
+    padding-bottom: 0px !important;
 }
