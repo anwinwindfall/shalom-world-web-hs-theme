@@ -6,3 +6,4 @@ function redirectIfNotLoggedIn() {
         window.location.href = document.referrer;
     }
 }
+redirectIfNotLoggedIn()
