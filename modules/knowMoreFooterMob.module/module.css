@@ -58,10 +58,13 @@
 }
 
 .campaign-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+    /* display: flex;
+                    align-items: center; */
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        gap: 5px;
+    
+        justify-content: start;
 }
 
 .live-label {
@@ -97,7 +100,7 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
     .campaign-text {
-        width: 160px;
+        /* width: 160px; */
     }
 }
 
@@ -107,6 +110,6 @@
             font-size: .9rem !important;
         }
 .campaign-wrapper {
-    gap: 0px !important;
+    gap: 5px !important;
 }
 }
