@@ -221,7 +221,7 @@
 .body-container_schedules .schedule-description {
     flex: 1; /* Take available space */
     text-align: center; /* Center align text */
-    color: rgba(10, 59, 129, 1);
+    color: #927750;
     font-family: "Inter";
     font-size: 12px; /* Smaller font size */
     font-weight: 400; /* Regular weight */
