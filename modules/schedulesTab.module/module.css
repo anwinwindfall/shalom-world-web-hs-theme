@@ -182,7 +182,7 @@
 
 /* New Class Names */
 .body-container_schedules .schedule-time {
-    flex: 0 0 28%;
+    flex: 0 0 29%;
     /* flex: 1; */
     text-align: center;
     color: rgba(10, 59, 129, 1);
@@ -193,7 +193,7 @@
     text-align: center;
 }
 .body-container_schedules .schedule-names {
-    flex: 0 0 52%;
+    flex: 0 0 57%;
     /* flex: 1; */
     text-align: center;
     color: rgba(10, 59, 129, 1);
@@ -204,7 +204,7 @@
 }
 .body-container_schedules .schedule-images {
     /* flex: 1; */
-    flex: 0 0 20%;
+    flex: 0 0 14%;
     text-align: right;
     position: relative;
     right: -15px; 
