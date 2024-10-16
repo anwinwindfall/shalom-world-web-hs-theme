@@ -157,7 +157,7 @@
     gap: 0px;
     flex-direction: column; 
     align-items: center; 
-    width: 70%;
+    width: 90%;
    
     
 
@@ -174,7 +174,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-height: 45px;
     margin-top: 30px;
-    width: 110%;
+    width: 100%;
 }
 .body-container_schedules .schedule-item:last-child {
     border-bottom: none;
@@ -208,7 +208,7 @@
     text-align: right;
     position: relative;
     right: -15px; 
-    justify-content: center; 
+    justify-content: right;; 
     align-items: center;
     display: flex;
 }
@@ -294,7 +294,7 @@
 }
 .body-container_schedules .shine-box {
     position: relative;
-    width: 110%;
+    width: 100%;
 
     /* overflow: hidden; */
     border-radius: 8px; /* Match schedule-item's border radius */
