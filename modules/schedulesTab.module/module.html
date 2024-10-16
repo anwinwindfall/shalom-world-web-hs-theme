@@ -116,7 +116,7 @@
                     {% for item in module.tab_2 %}
                     <div id=2_{{loop.index}} class = 'schedule-item'>
     
-                        <div class = 'schedule-time'>{{ item.start_time }} - {{ item.end_time }}</div>
+                        <div class = 'schedule-time'>{{ item.start_time }} <span class="time_hyphen">-</span> {{ item.end_time }}</div>
                         <div>
                             <div class= 'schedule-names'>{{ item.resource_name }}</div>
                             <div class= 'schedule-description'>{{ item.resource_description }}</div >  
@@ -138,7 +138,7 @@
                     {% for item in module.tab_3 %}
                     <div id=3_{{loop.index}} class = 'schedule-item'>
     
-                        <div class = 'schedule-time'>{{ item.start_time }} - {{ item.end_time }}</div>
+                        <div class = 'schedule-time'>{{ item.start_time }} <span class="time_hyphen">-</span> {{ item.end_time }}</div>
                         <div>
                             <div class= 'schedule-names'>{{ item.resource_name }}</div>
                             <div class= 'schedule-description'>{{ item.resource_description }}</div >  
@@ -159,7 +159,7 @@
                     {% for item in module.tab_4 %}
                     <div id=4_{{loop.index}} class = 'schedule-item'>
     
-                        <div class = 'schedule-time'>{{ item.start_time }} - {{ item.end_time }}</div>
+                        <div class = 'schedule-time'>{{ item.start_time }} <span class="time_hyphen">-</span> {{ item.end_time }}</div>
                         <div>
                             <div class= 'schedule-names'>{{ item.resource_name }}</div>
                             <div class= 'schedule-description'>{{ item.resource_description }}</div >  
