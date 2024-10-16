@@ -454,7 +454,7 @@
         justify-content: center;
     }
     
-    .body-container_schedules button.calendar-button {
+    .body-container_schedules .image-container .calendar-button {
         align-items: center;
         gap: 10px;
         background-color:#0A3B81;
