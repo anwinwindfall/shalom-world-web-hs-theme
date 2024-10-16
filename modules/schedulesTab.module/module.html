@@ -45,7 +45,7 @@
         <div class="button-container">
             <div>
                 <a>
-                    <ul class="button tab-button active" id="btn_1" onclick="openTab(this, 'tab1')" >
+                    <ul class="button tab-button selected active" id="btn_1" onclick="openTab(this, 'tab1')" >
                         <li>12 am</li>
                         <li>6 am</li>
                     </ul>
@@ -199,7 +199,6 @@
             buttons.forEach(button => {
                 button.classList.remove('selected');
             });
-
             // Add 'selected' class to the clicked button
             button.classList.add('selected');
         
