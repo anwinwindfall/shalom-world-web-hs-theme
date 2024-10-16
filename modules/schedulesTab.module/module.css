@@ -385,7 +385,7 @@
         border: 2px solid transparent;
     }
     .body-container_schedules .schedule-time {
-        flex: 0 0 22%;
+        flex: 0 0 21%;
         text-align: center;
         color: rgba(10, 59, 129, 1);
         font-family: "Inter";
@@ -396,7 +396,7 @@
         /* width: 47px; */
     }
     .body-container_schedules .schedule-names {
-        flex: 0 0 54%;
+        flex: 0 0 55%;
         text-align: center;
         color: rgba(10, 59, 129, 1);
         font-family: "Inter";
