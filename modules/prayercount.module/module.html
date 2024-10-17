@@ -1,26 +1,42 @@
-<!-- module html  -->
-
-{% for item in module.prayer_counter_content %}
-  <div class="counter-container">
-    <span class="label">{{ item.prayer_title }}</span>
-
-    <span class="vist-page">Visit Page</span>
-
-    <div id="openModalBtn">
-        <svg width="24" height="24" viewBox="0 0 24 23"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M23.3535 0.99998C23.3535 0.723838 23.1296 0.49998 22.8535 0.49998L18.3535 0.49998C18.0773 0.49998 17.8535 0.723838 17.8535 0.99998C17.8535 1.27612 18.0773 1.49998 18.3535 1.49998L22.3535 1.49998L22.3535 5.49998C22.3535 5.77612 22.5773 5.99998 22.8535 5.99998C23.1296 5.99998 23.3535 5.77612 23.3535 5.49998L23.3535 0.99998ZM12.7286 11.832L23.207 1.35353L22.4999 0.646427L12.0214 11.1249L12.7286 11.832Z" fill="#B09B45"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.25 9.08943V21C18.25 21.5523 17.8023 22 17.25 22H2C1.44771 22 1 21.5523 1 21V5.74997C1 5.19768 1.44771 4.74997 2 4.74997H15.8434L16.8434 3.74997H2C0.895431 3.74997 0 4.6454 0 5.74997V21C0 22.1046 0.895429 23 2 23H17.25C18.3546 23 19.25 22.1046 19.25 21V8.08943L18.25 9.08943Z" fill="#B09B45"/>
-            </svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="counter-container">
+            <span class="label">Rosary</span>
+        
+            <div class="vist-continer">
+                <div>
+                    <span class="vist-page">Visit Page</span>
+                </div>
+                
+                <div id="openModalBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 23"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.3535 0.99998C23.3535 0.723838 23.1296 0.49998 22.8535 0.49998L18.3535 0.49998C18.0773 0.49998 17.8535 0.723838 17.8535 0.99998C17.8535 1.27612 18.0773 1.49998 18.3535 1.49998L22.3535 1.49998L22.3535 5.49998C22.3535 5.77612 22.5773 5.99998 22.8535 5.99998C23.1296 5.99998 23.3535 5.77612 23.3535 5.49998L23.3535 0.99998ZM12.7286 11.832L23.207 1.35353L22.4999 0.646427L12.0214 11.1249L12.7286 11.832Z" fill="#B09B45"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.25 9.08943V21C18.25 21.5523 17.8023 22 17.25 22H2C1.44771 22 1 21.5523 1 21V5.74997C1 5.19768 1.44771 4.74997 2 4.74997H15.8434L16.8434 3.74997H2C0.895431 3.74997 0 4.6454 0 5.74997V21C0 22.1046 0.895429 23 2 23H17.25C18.3546 23 19.25 22.1046 19.25 21V8.08943L18.25 9.08943Z" fill="#B09B45"/>
+                        </svg>
+        
+                </div>
+        
+            </div>
 
     </div>
+
+  
     
-    <div class="counter-controls">
+    <!-- <div class="counter-controls">
       <button class="decrement">-</button>
       <span class="count">00</span>
       <div class="number">Number</div>
       <div class="nos">Nos</div>
       <button class="increment">+</button>
-    </div>
+    </div> -->
   </div>
 
   <!-- Modal Structure -->
@@ -29,13 +45,32 @@
           <button class="close-btn" id="closeBtn">&times;</button>
           <section>
               <div class="dedication-prayer">
-                  <h4>{{ item.popup_prayer_title }}</h4>
+                  <h4>Dedication Prayer</h4>
                   <p>
-                  {{ item.prayer_popup_content }}
+                      O Immaculate Heart of Mary, we humbly come before you as the presidential election in November draws
+                      near.
+                  </p>
+                  <p>
+                      We entrust our nation, the United States of America, to your Immaculate Heart. Intercede for us, dear
+                      Mother, that all voters may be guided by wisdom and discernment. May they choose leaders who reflect
+                      justice, compassion, and integrity.
+                  </p>
+                  <p>
+                      We pray for healing and unity among the people of this great nation. Help us to overcome division and
+                      discord, fostering a spirit of love and cooperation. May your maternal guidance inspire us to prioritize
+                      the common good, to seek peace, and to promote justice for all.
+                  </p>
+                  <p>
+                      As we face this pivotal moment in our history, we ask that your Immaculate Heart may shine a light upon
+                      our paths. Protect our democracy and lead us toward a future filled with hope and prosperity. Bring us
+                      closer to your Son, Jesus Christ, and to a deeper commitment to serving one another. O Mary Immaculate,
+                      pray for us. Amen.
                   </p>
               </div>
           </section>
       </div>
   </div>
-{% endfor %}
 
+  <script src="script.js"></script>
+</body>
+</html>
