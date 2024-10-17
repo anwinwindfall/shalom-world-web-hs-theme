@@ -187,6 +187,7 @@ padding-left: 10px;
 .open_Modal_button{
     margin: 10px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 

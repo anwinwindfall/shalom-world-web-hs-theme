@@ -131,7 +131,14 @@ document.addEventListener("DOMContentLoaded", () => {
   function showSuccessPopup(message, formData) {
     localStorage.setItem("sw_election_campaign_signed_in", "true");
     localStorage.setItem("sw_election_campaign_user_name_avatar", `${formData.firstName[0]}${formData.lastName[0]}`);
-    if (!window.location.origin === "https://prayer.shalomworld.org") {
+    console.log(window.location.origin, "dfds");
+
+    if (!window.location.origin == "https://prayer.shalomworld.org") {
+      window.location.href = "https://prayer.shalomworld.org/presidential-election-24-hour-rosary"
+      console.log("jhfkjs");
+
+    }
+    else if (document.referrer == "https://prayer.shalomworld.org/prayer-campaign") {
       window.location.href = "https://prayer.shalomworld.org/presidential-election-24-hour-rosary"
     }
     else{
@@ -145,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleCloseSuccess() {
     document.getElementById("successPopup").style.display = "none";
     
-    window.location.reload();  // Reloads the page after closing
+    // window.location.reload();  // Reloads the page after closing
   }
   
   // API functions (same as before)
