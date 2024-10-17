@@ -1,0 +1,63 @@
+<!--
+    templateType: page
+    label: Dedication Prayer Prayer Board
+    isAvailableForNewContent: true
+-->
+
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/template-previews/home.png
+-->
+{% extends "./layouts/sw-base.html" %}
+{% block body %}
+    {%dnd_area "dnd_area"
+    label="Main section",
+    class="body-container body-container--dedication-prayer"
+    %}
+
+    {% dnd_section
+    background_color="rgba(10, 59, 129, 1)"
+    %}
+        {% dnd_module 'header'
+            path="/shalom_world_web_theme/modules/header"
+            width=12
+            offset=0,
+            horizontal_alignment='center'
+        %}
+        {% end_dnd_module %}
+    {% end_dnd_section %}
+
+
+    {% dnd_section%}
+        {%dnd_module
+        path="/shalom_world_web_theme/modules/topBanner",
+        %}
+        {%end_dnd_module%}
+    {%end_dnd_section%}
+    {% dnd_section
+    padding = {
+    "top": "40px",
+    "bottom": "40px",
+    "left" : 0,
+    "right": 0
+    },
+    background_color="rgba(10, 59, 129, 1)"
+    %}
+        {%dnd_module
+        path="/shalom_world_web_theme/modules/prayercount",
+        %}
+        {%end_dnd_module%}
+    {%end_dnd_section%}
+    {% dnd_section
+    background_color="rgba(10, 59, 129, 1)"
+    %}
+        {%dnd_module
+        path="/shalom_world_web_theme/modules/footer",
+        %}
+        {%end_dnd_module%}
+    {%end_dnd_section%}
+    {% end_dnd_area %}
+{% endblock body %}
+    
