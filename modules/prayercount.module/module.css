@@ -1,281 +1,325 @@
 
-.counter-container {
-    display: flex;
-    align-items: center;
-    /* background-color: #ffffff; */
-    background: rgba(255, 255, 255, 1);
-
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 724px;
-    height: 84px;
-    top: 944px;
-    left: 598px;
-    gap: 0px;
-    border-radius: 8px 0px 0px 0px;
-    opacity: 0px;
-
-  }
-  
-  .label {
-    margin-right: 15px;
-    /* font-size: 18px; */
-    color: rgba(10, 59, 129, 1);
+.header__prayer_counter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header__prayer_counter p {
+    margin: 0;
+    font-family: "Inter";
+    color: #fff;
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
     line-height: 29.05px;
-    text-align: left;
-
-  }
-  .vist-page{
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19.36px;
-    text-align: right;
-    color: rgba(10, 59, 129, 1);
-    margin-left: 200px;
-
-
-  }
-  
-  .link {
-    margin-right: 15px;
-  }
-  
-  .link-icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .counter-controls {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-  }
-  
-  .decrement, .increment {
-
-    color: rgba(10, 59, 129, 0.2);
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    margin: 10px;
-
-  }
-  
-  .count {
-    margin: 0 10px;
-    color: rgba(10, 59, 129, 1);
-    font-family: Inter;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 48.41px;
     text-align: center;
 
-  }
-  
-  
-  .number {
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 29px;
-    color: rgba(10, 59, 129, 1);
-    margin-bottom: 10px; /* Spacing between the number and count */
-    text-align: center;
-    margin-bottom: -60px;
-    margin-left: -57px
-  }
-  
-  .decrement:disabled {
-    color: #ccc;
-    cursor: not-allowed;
-  }
-
-  /* Modal Overlay */
-.modal-overlay {
+}
+.body-container_prayer-counter{
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 59, 129, 0.9); /* Updated to blue with 80% opacity */
-    z-index: 1000;
+}
+
+.body-container_prayer-counter .counter-container {
+display: flex;
+align-items: center;
+/* background-color: #ffffff; */
+background: rgba(255, 255, 255, 1);
+border: 1px solid #ddd;
+padding: 10px 20px;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+width: 60%;
+/* height: 84px; */
+gap: 0px;
+border-radius: 8px;
+justify-content: space-between;
+margin-top:30px;
+
+}
+.body-container_prayer-counter .vist-continer {
+display: flex;
+align-items: center;
+padding-right: 16px;
+}
+
+.body-container_prayer-counter .label {
+margin-right: 15px;
+/* font-size: 18px; */
+color: rgba(10, 59, 129, 1);
+font-family: Inter;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.05px;
+text-align: left;
+
+}
+.body-container_prayer-counter .vist-page{
+font-family: "Inter";
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+/* text-align: right; */
+color: rgba(10, 59, 129, 1);
+/* margin-left: 200px; */
+
+
+}
+
+.body-container_prayer-counter .link {
+margin-right: 15px;
+}
+
+.body-container_prayer-counter .link-icon {
+width: 20px;
+height: 20px;
+}
+
+.body-container_prayer-counter.counter-controls {
+display: flex;
+align-items: center;
+margin-left: 100px;
+}
+
+.body-container_prayer-counter .decrement, .body-container_prayer-counter .increment {
+
+color: rgba(10, 59, 129, 0.2);
+width: 30px;
+height: 30px;
+font-size: 20px;
+border-radius: 5px;
+cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.4);
+margin: 10px;
+
+}
+
+.body-container_prayer-counter .count {
+margin: 0 10px;
+color: rgba(10, 59, 129, 1);
+font-family: "Inter", sans-serif;
+font-size: 40px;
+font-weight: 500;
+line-height: 48.41px;
+text-align: center;
+
+}
+
+
+.body-container_prayer-counter .number {
+font-family: "Inter", sans-serif;
+font-size: 18px;
+font-weight: 500;
+line-height: 29px;
+color: rgba(10, 59, 129, 1);
+margin-bottom: 10px; /* Spacing between the number and count */
+text-align: center;
+margin-bottom: -60px;
+margin-left: -57px
+}
+
+.body-container_prayer-counter .decrement:disabled {
+color: #ccc;
+cursor: not-allowed;
+}
+
+/* Modal Overlay */
+.modal-overlay_prayer-counter{
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(10, 59, 129, 0.9); /* Updated to blue with 80% opacity */
+z-index: 1000;
 
 }
 
 /* Modal Content */
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    width: 90%;
-    text-align: center;
-    position: relative;
-    width: 690px;
-    height: min-content;
+.modal-overlay_prayer-counter .modal-content {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+max-width: 800px;
+width: 90%;
+text-align: center;
+position: relative;
+width: 690px;
+height: min-content;
 }
 
 /* Modal Close Button */
-.close-btn {
-    position: absolute;
-    top: -60px;
-    right: 0px;
-    width: 40px;
-    height: 40px;
-    background-color: #000; /* Updated background color to black */
-    color: #fff; /* White text for the close 'X' */
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
+.modal-overlay_prayer-counter .close-btn {
+position: absolute;
+top: -60px;
+right: 0px;
+width: 40px;
+height: 40px;
+background-color: #000; /* Updated background color to black */
+color: #fff; /* White text for the close 'X' */
+border: none;
+border-radius: 50%;
+font-size: 24px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 1;
 }
 
-.close-btn:hover {
-    background-color: #444; /* Slight hover effect */
+.modal-overlay_prayer-counter .close-btn:hover {
+background-color: #444; /* Slight hover effect */
 }
 
 /* Button to Open Modal */
-#openModalBtn {
+.modal-overlay_prayer-counter #openModalBtn {
+margin: 10px;
+padding-left: 10px;
+
+}
+.open_Modal_button{
     margin: 10px;
     padding-left: 10px;
-
-
-
 }
 
 
 /****************** section 2 ********************/
-.dedication-prayer {
-    background: #FFFFFF;
-    min-width: 200px;
-    margin: 0 auto;
-    margin-top: 10px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    margin: 60px;
-    
-}
-
-.dedication-prayer h4 {
-    color: #0A3B81;
-    font-family: Libre Baskerville;
-    font-size: 65px;
-    font-weight: 700;
-    text-align: left;
-    margin: 0px;
-}
-
-.dedication-prayer p {
-    color: #030303;
-    font-family: Libre Baskerville;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
-    padding-top: 25px;
+.modal-overlay_prayer-counter .dedication-prayer {
+background: #FFFFFF;
+min-width: 200px;
+margin: 0 auto;
+margin-top: 10px;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+margin: 60px;
 
 }
-.dedication-prayer p {
-    margin-bottom: 16px; /* Adjust spacing between paragraphs */
-    color: #030303;
-    font-family: Libre Baskerville;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: left;
-    padding-top: 16px; /* Optional padding above paragraphs */
+
+.modal-overlay_prayer-counter .dedication-prayer h4 {
+color: #0A3B81;
+font-family: "Libre Baskerville";
+font-size: 50px;
+font-weight: 700;
+text-align: left;
+margin: 0px;
+}
+
+.modal-overlay_prayer-counter .dedication-prayer p {
+color: #030303;
+font-family: "Libre Baskerville";
+font-size: 16px;
+font-weight: 400;
+text-align: left;
+padding-top: 25px;
+
+}
+.modal-overlay_prayer-counter .dedication-prayer p {
+margin-bottom: 16px; /* Adjust spacing between paragraphs */
+color: #030303;
+font-family: "Libre Baskerville";
+font-size: 16px;
+font-weight: 400;
+text-align: left;
+padding-top: 16px; /* Optional padding above paragraphs */
 }
 @media (max-width: 768px) {
-    .number {
-        display: none !important ;
-    }
+    .body-container_prayer-counter .number {
+    display: none !important ;
+}
 
 }
 
 /* Show the "Number" div on larger screens */
 @media (min-width: 769px) {
-    .number {
-        display: block;
-    }
+    .body-container_prayer-counter .number {
+    display: block;
+}
 
-    .nos{
-        display: none !important;
-    }
+.body-container_prayer-counter .nos{
+    display: none !important;
+}
 }
 
 @media(max-width: 768px) {
-    .counter-container {
+    .box_body-container_prayer_counter {
+        padding-top: min(calc(20% + 10px), 90px);
+    }
+
+
+    .body-container_prayer-counter{
+        display: flex;
+        justify-content: center;
+    }
+
+    .body-container_prayer-counter .counter-container {
+        display: flex;
+        align-items: center;
+        /* background-color: #ffffff; */
+        background: rgba(255, 255, 255, 1);
+
+        border: 1px solid #ddd;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        gap: 0px;
+        border-radius: 8px;
         justify-content: space-between;
-        height: 63px;
-        margin: 10px;
-        width: auto;
-        align-items: center
+        
 
     }
-    .counter-controls{
+    .body-container_prayer-counter .counter-controls{
         display: flex;
         align-items: center;
         margin-left: 10px;
     }
-    .vist-page {
+    .body-container_prayer-counter .vist-page {
         display: none !important;
     }
 
     /* Resize label */
-    .label {
+    .body-container_prayer-counter .label {
         font-size: 18px;
     }
 
     /* Hide the number on small screens */
-    .number {
+    .body-container_prayer-counter .number {
         display: none;
     }
 
     /* Adjust counter buttons */
-    .decrement, .increment {
+    .body-container_prayer-counter .decrement, .body-container_prayer-counter .increment {
         width: 25px;
         height: 25px;
         font-size: 18px;
         margin: 5px;
     }
 
-    .count {
+    .body-container_prayer-counter .count {
         font-size: 30px;
     }
-   
 
-    .dedication-prayer {
+
+    .modal-overlay_prayer-counter .dedication-prayer {
         background: #FFFFFF;
         max-width: 1000px;
         margin: 26px;
     }
 
-    .dedication-prayer h4 {
+    .modal-overlay_prayer-counter .dedication-prayer h4 {
         color: #0A3B81;
-        font-family: Libre Baskerville;
-        font-size: 35px;
+        font-family: "Libre Baskerville";
+        font-size: 28px;
         font-weight: 700;
         text-align: left;
     }
-    .dedication-prayer p {
-       
+    .modal-overlay_prayer-counter .dedication-prayer p {
+    
         max-width: 772px;
     }
-    .modal-content {
+    .modal-overlay_prayer-counter .modal-content {
         background-color: #fff;
         padding: 20px;
         border-radius: 10px;
@@ -285,7 +329,7 @@
         position: relative;
         height: min-content;
     }
-    .close-btn {
+    .modal-overlay_prayer-counter .close-btn {
         position: absolute;
         top: -40px;
         right: 0px;
@@ -302,12 +346,12 @@
         align-items: center;
         line-height: 1;
     }
-    .number{
+    .body-container_prayer-counter .number{
         display: block;
     }
-    .nos {
+    .body-container_prayer-counter .nos {
 
-        font-family: Inter;
+        font-family: "Inter";
         font-size: 14px;
         font-weight: 500;
         line-height: 29px;
@@ -318,9 +362,16 @@
         margin-left: -36px;
         padding-right: 16px;
         
+
+    }
+  /* .counter-container {
+        justify-content: space-between;
+        height: 63px;
+        margin: 10px;
+        width: auto;
+        align-items: center
+
+    } */
     
-      }
-     
 }
 
-  

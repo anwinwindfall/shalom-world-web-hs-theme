@@ -53,6 +53,9 @@
     display: flex;
     justify-content: center;
 }
+a#calendar {
+    text-decoration: none;
+}
 
 .body-container_schedules  .image-container button.calendar-button {
     align-items: center;
