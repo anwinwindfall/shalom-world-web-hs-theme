@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("sw_election_campaign_signed_in", "true");
     localStorage.setItem("sw_election_campaign_user_name_avatar", `${formData.firstName[0]}${formData.lastName[0]}`);
     if (!window.location.origin === "https://prayer.shalomworld.org") {
-          window.location.href="https://prayer.shalomworld.org/presidential-election/prayer-campaign"
+      window.location.href = "https://prayer.shalomworld.org/presidential-election-24-hour-rosary"
     }
     else{
       window.location.href=document.referrer

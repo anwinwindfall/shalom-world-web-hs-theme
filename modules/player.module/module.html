@@ -1,8 +1,24 @@
+{% if module.rosary_ == true%}
+<div class="virtual-chappel-btn-container">
+    <div class="titleAndTime">
+        <p>{{ module.title }} </p>
+        <span class="dAndT"> - {{ module.date_and_time }}</span>
+        <span class="live-label">Live</span>
+    </div>
+    <div class="schedule-btn">
+        <a id="schedule-btn-anchor" href="https://prayer.shalomworld.org/presidential-election/24-hour-rosary-schedule">
+            View Schedule
+        </a>
+    </div>
+</div>
+{% else %}
 <div class="virtual-chappel">
     <h1>{{ module.title }}</h1>
 </div>
+{% endif %}
 <!-- Countdown Wrapper -->
 <div class="wrapper_video" id="countdown-wrapper" style="display: none;">
+    
     <div id="countdown" class="timer">
         <h2>BEGINNING IN</h2>
         <div>
