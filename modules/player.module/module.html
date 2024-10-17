@@ -27,10 +27,11 @@
 </div>
 
 <!-- Video Player -->
-<div class="player_container__" id="video-player" style="visibility: hidden; position: absolute;">
+<div class="player_container__" id="video-player"
+    style="visibility: hidden; background-color: transparent;  display:none;">
     {{ module.embed_code }}
 </div>
-
+<!-- {{ module.date_and_time }} -->
 {% require_js %}
 <script async>
     const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
@@ -63,6 +64,7 @@
             document.getElementById("countdown-wrapper").style.display = "none";
             const videoPlayer = document.getElementById("video-player");
             videoPlayer.style.visibility = "visible";
+            videoPlayer.style.display = "block";
             videoPlayer.style.position = "static";
         }
 
