@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("closeSuccess").addEventListener("click", handleCloseSuccess);
     document.getElementById("closeErrorOk").addEventListener("click", handleErrorOk);
   });
+
   
   async function handleSubmit(e) {
     e.preventDefault();
@@ -14,14 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Show the loader
     showLoader();
-  
     const formData = {
       firstName: document.querySelector('input[name="firstName"]').value.trim(),
       lastName: document.querySelector('input[name="lastName"]').value.trim(),
       email: document.querySelector('input[name="email"]').value.trim(),
     };
     
-    // console.log("formData", formData);
+    console.log("formData", formData);
   
     try {
       const checkEmailResponse = await checkEmail(formData);
@@ -35,10 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Hide the loader
           hideLoader();
-
+            console.log("200+5");
+            
           // Show success popup
-          showSuccessPopup("Your submission was successful.");
-       
+          showSuccessPopup("Your submission was successful.", formData);
+          
+          
+
         // if (emailCheckerData?.properties?.firstname === formData.firstName && emailCheckerData?.properties?.lastname === formData.lastName) {
         //   const updateContact = await updateNewContact(formData, emailCheckerData?.id.trim());
         //   // console.log("updateContact", updateContact);
@@ -69,9 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const userInteractionResponse = await createUserInteraction(formData);
           const userInteractionData = await userInteractionResponse.json();
           await createAssociation(createNewContactData?.id, userInteractionData?.id);
-  
           hideLoader();
-          showSuccessPopup("Form submission was successful!");
+          showSuccessPopup("Form submission was successful!", formData);
         } else {
           hideLoader();
           showErrorPopup("Failed to create new contact. Please try again.");
@@ -81,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showErrorPopup("An unexpected error occurred. Please try again.");
       }
     } catch (error) {
-      // console.error("Error:", error);
+      console.error("Error:", error);
       hideLoader();
       showErrorPopup("An error occurred. Please try again.");
     }
@@ -126,7 +128,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.reload();
   }
   
-  function showSuccessPopup(message) {
+  function showSuccessPopup(message, formData) {
+    localStorage.setItem("sw_election_campaign_signed_in", "true");
+    localStorage.setItem("sw_election_campaign_user_name_avatar", `${formData.firstName[0]}${formData.lastName[0]}`);
+    if (!window.location.origin === "https://prayer.shalomworld.org") {
+          window.location.href="https://prayer.shalomworld.org/presidential-election/prayer-campaign"
+    }
+    else{
+      window.location.href=document.referrer
+    }
     document.getElementById("successMessage").innerHTML = `<strong>Success!</strong><br/>${message}`;
     document.getElementById("successPopup").style.display = "block";
     document.getElementById("loginForm").style.display = "none";

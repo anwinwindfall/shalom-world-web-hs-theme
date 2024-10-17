@@ -1,27 +1,74 @@
 [
   {
-   "type": "group",
-   "id": "ce14511b-40b8-3e90-c92b-425a437d571a",
-   "label": "Footer Navigation Contents",
    "children": [
     {
-     "type": "text",
+     "allow_new_line": false,
+     "default": "24 hour Rosary Schedule",
+     "display_width": null,
      "id": "ec8b4d10-75fb-71fa-27ad-ffb22808f080",
-     "validation_regex": "",
      "label": "Nav text",
+     "locked": false,
      "name": "nav_text",
-     "default": "24 hour Rosary Schedule"
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
     },
     {
-     "type": "text",
+     "allow_new_line": false,
+     "display_width": null,
      "id": "3f29669d-c7d7-4184-a3e7-a8d888db9451",
-     "validation_regex": "",
      "label": "Nav link",
-     "name": "nav_link"
+     "locked": false,
+     "name": "nav_link",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "default": "Know More",
+     "display_width": null,
+     "id": "d78c60f3-8c19-cfe0-be61-dca2165d666b",
+     "label": "Button Text",
+     "locked": false,
+     "name": "button_text",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "choice",
+     "id": "ff7f12cd-757b-7b93-432e-f539f4e13dec",
+     "display": "radio",
+     "choices": [
+      [
+       "true",
+       "True"
+      ],
+      [
+       "false",
+       "False"
+      ]
+     ],
+     "label": "Is Live?",
+     "name": "is_live_",
+     "default": "false"
     }
    ],
-   "name": "footer_navigation_contents",
    "default": [],
-   "occurrence": {}
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "id": "ce14511b-40b8-3e90-c92b-425a437d571a",
+   "label": "Footer Navigation Contents",
+   "locked": false,
+   "name": "footer_navigation_contents",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
   }
  ]

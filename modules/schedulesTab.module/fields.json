@@ -1,0 +1,411 @@
+[
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "6867b04b-a22e-ddfc-2880-93699dd9e02a",
+     "label": "Resource Name",
+     "locked": false,
+     "name": "resource_name",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "id": "82281abe-f251-1fad-adec-1ca9e51cf6d2",
+     "label": "Resource Image",
+     "locked": false,
+     "name": "resource_image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "c4bd3dbb-6114-8c44-3dbe-a76cf1cfae95",
+     "label": "Resource Description",
+     "locked": false,
+     "name": "resource_description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "5e263e66-1327-6bd8-e4e7-143572da3796",
+     "label": "Start time",
+     "locked": false,
+     "name": "start_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "id": "fb5036a7-4aa3-87af-70bb-fc4998fdf686",
+     "label": "End time",
+     "locked": false,
+     "name": "end_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "datetime",
+     "id": "95f6f7ae-c890-36d3-cb82-f3681642379a",
+     "step": 30,
+     "label": "Start time value",
+     "name": "start_time_value"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "End time value",
+     "name": "end_time_value",
+     "oldId": "95f6f7ae-c890-36d3-cb82-f3681642379a",
+     "id": "7b6fe037-cddb-b9e1-9951-05dd4d668898"
+    }
+   ],
+   "default": [],
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "id": "09bfe581-c736-c761-c3d3-3c18255f9e70",
+   "label": "Tab 1",
+   "locked": false,
+   "name": "tab_1",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  },
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Name",
+     "locked": false,
+     "name": "resource_name",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "6867b04b-a22e-ddfc-2880-93699dd9e02a",
+     "id": "4b6a092b-dc05-5e9e-d552-07f0e03db2fb"
+    },
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "label": "Resource Image",
+     "locked": false,
+     "name": "resource_image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image",
+     "oldId": "82281abe-f251-1fad-adec-1ca9e51cf6d2",
+     "id": "009f28d7-628a-ccad-0e8b-8ed0a9f8e01c"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Description",
+     "locked": false,
+     "name": "resource_description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "c4bd3dbb-6114-8c44-3dbe-a76cf1cfae95",
+     "id": "859115e4-2aa7-62e7-456b-298ce4d27d2d"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Start time",
+     "locked": false,
+     "name": "start_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "5e263e66-1327-6bd8-e4e7-143572da3796",
+     "id": "ccb2bf18-96c8-e793-00ea-1e3ded4bee6e"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "End time",
+     "locked": false,
+     "name": "end_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "fb5036a7-4aa3-87af-70bb-fc4998fdf686",
+     "id": "05fcc30d-3530-1b28-c7d2-eb3ea6084055"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "Start time value",
+     "name": "start_time_value",
+     "oldId": "95f6f7ae-c890-36d3-cb82-f3681642379a",
+     "id": "13222daf-13ca-0017-b5e3-9ecea3c95753"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "End time value",
+     "name": "end_time_value",
+     "oldId": "7b6fe037-cddb-b9e1-9951-05dd4d668898",
+     "id": "c01cfaba-b426-af0c-928f-b65b562bbb60"
+    }
+   ],
+   "default": [],
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "label": "Tab 2",
+   "locked": false,
+   "name": "tab_2",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "oldId": "09bfe581-c736-c761-c3d3-3c18255f9e70",
+   "id": "e1513403-a8e1-8eee-48bc-20b14d5ec3ad"
+  },
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Name",
+     "locked": false,
+     "name": "resource_name",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "4b6a092b-dc05-5e9e-d552-07f0e03db2fb",
+     "id": "7a4dc747-3ed6-17c3-5f35-d5ebb085fb3b"
+    },
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "label": "Resource Image",
+     "locked": false,
+     "name": "resource_image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image",
+     "oldId": "009f28d7-628a-ccad-0e8b-8ed0a9f8e01c",
+     "id": "35d980d5-11c6-1704-e13d-0e56a1e87878"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Description",
+     "locked": false,
+     "name": "resource_description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "859115e4-2aa7-62e7-456b-298ce4d27d2d",
+     "id": "bdaf7d24-5af6-586c-9e55-fb67b98847de"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Start time",
+     "locked": false,
+     "name": "start_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "ccb2bf18-96c8-e793-00ea-1e3ded4bee6e",
+     "id": "5f1699fc-5c5e-6a04-99bb-47b2c600ccd6"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "End time",
+     "locked": false,
+     "name": "end_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "05fcc30d-3530-1b28-c7d2-eb3ea6084055",
+     "id": "ffd63913-9545-c3b4-562f-fc03d025e230"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "Start time value",
+     "name": "start_time_value",
+     "oldId": "13222daf-13ca-0017-b5e3-9ecea3c95753",
+     "id": "48a0ce88-5f51-56f0-c562-fc3f3521a46e"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "End time value",
+     "name": "end_time_value",
+     "oldId": "c01cfaba-b426-af0c-928f-b65b562bbb60",
+     "id": "22358e13-2a5b-5ee9-109c-a054de7c9c22"
+    }
+   ],
+   "default": [],
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "label": "Tab 3",
+   "locked": false,
+   "name": "tab_3",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "oldId": "e1513403-a8e1-8eee-48bc-20b14d5ec3ad",
+   "id": "3369e050-b8e7-a419-da10-c64b393b72b5"
+  },
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Name",
+     "locked": false,
+     "name": "resource_name",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "7a4dc747-3ed6-17c3-5f35-d5ebb085fb3b",
+     "id": "f5ecf7aa-1095-e2ae-a7bd-1aa14bd86409"
+    },
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "",
+      "alt": null,
+      "loading": "lazy"
+     },
+     "display_width": null,
+     "label": "Resource Image",
+     "locked": false,
+     "name": "resource_image",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image",
+     "oldId": "35d980d5-11c6-1704-e13d-0e56a1e87878",
+     "id": "51f9533a-aeec-9e41-6ab8-f0b889909b9c"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Resource Description",
+     "locked": false,
+     "name": "resource_description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "bdaf7d24-5af6-586c-9e55-fb67b98847de",
+     "id": "4ba577ee-fffd-0041-01e7-629e1b868704"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "Start time",
+     "locked": false,
+     "name": "start_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "5f1699fc-5c5e-6a04-99bb-47b2c600ccd6",
+     "id": "ec4490e5-a70e-d3be-69c1-3e5add11f090"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
+     "label": "End time",
+     "locked": false,
+     "name": "end_time",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "ffd63913-9545-c3b4-562f-fc03d025e230",
+     "id": "a92736e2-76ce-cd4f-60d1-6e52f77bf603"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "Start time value",
+     "name": "start_time_value",
+     "oldId": "48a0ce88-5f51-56f0-c562-fc3f3521a46e",
+     "id": "13d1d0a2-5fd7-1e48-e191-273dc5e94710"
+    },
+    {
+     "type": "datetime",
+     "step": 30,
+     "label": "End time value",
+     "name": "end_time_value",
+     "oldId": "22358e13-2a5b-5ee9-109c-a054de7c9c22",
+     "id": "e7c2aeed-ed53-2ddd-cc25-2c943685da27"
+    }
+   ],
+   "default": [],
+   "display_width": null,
+   "expanded": false,
+   "group_occurrence_meta": null,
+   "label": "Tab 4",
+   "locked": false,
+   "name": "tab_4",
+   "occurrence": {},
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group",
+   "oldId": "3369e050-b8e7-a419-da10-c64b393b72b5",
+   "id": "bf14f0dd-c7df-550b-12f6-33ebc3a59822"
+  }
+ ]

@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
+    padding-bottom: 5%;
 }
 
 .virtual-chappel h1 {
@@ -77,6 +78,9 @@ body {
 .player_container__ {
     width: 100%;
     padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive */
@@ -165,4 +169,16 @@ body {
     small {
         font-size: 0.7rem;
     }
+}
+.player_container__ {
+    padding-bottom: 7% !important;
+}
+
+.youtube_video{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.row-fluid .dnd_area-row-2-padding{
+    padding-bottom: 0px !important;
 }

@@ -1,19 +1,11 @@
-{% set visibility = 0 %}
-
-
-
-
-<div class = "virtual-chappel">    
-   <h1>Virtual Chappel</h1>
-
+<div class="virtual-chappel">
+    <h1>{{ module.title }}</h1>
 </div>
-{% if visibility == 0 %}
-        <div class="wrapper_video">
-        <div id="countdown" class="timer">
-            <h2>BEGINNING IN</h2>
-            <div>
-            
-            
+<!-- Countdown Wrapper -->
+<div class="wrapper_video" id="countdown-wrapper" style="display: none;">
+    <div id="countdown" class="timer">
+        <h2>BEGINNING IN</h2>
+        <div>
             <div class="countdown-segment">
                 <span id="days"></span>
                 <small>Days</small>
@@ -30,51 +22,50 @@
                 <span id="seconds"></span>
                 <small>Secs</small>
             </div>
-            </div>
         </div>
     </div>
-    {% else %}
-      <div class="player_container__">
-      {# <div id="player" class="player">
-      <iframe src="https://player.vimeo.com/video/939262528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              title="SHALOM WORLD 10TH ANNIVERSARY"></iframe>
-      </div> #}
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/939262528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SHALOM WORLD 10TH ANNIVERSARY"></iframe></div>
-      </div>
-{% endif %}
+</div>
+
+<!-- Video Player -->
+<div class="player_container__" id="video-player" style="visibility: hidden; position: absolute;">
+    {{ module.embed_code }}
+</div>
 
 {% require_js %}
-        <script async>
-        window.onload = function() {
-        const targetDateEST = new Date("Oct 19, 2024 12:32:00").toLocaleString("en-US", { timeZone: "America/New_York" });
-        const targetDate = new Date(targetDateEST).getTime();
-        
-        const countdownInterval = setInterval(function () {
-        
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-        
+<script async>
+    const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
+        timeZone: "America/New_York",
+    });
+    const targetDate = new Date(targetDateEST).getTime();
+
+    const countdownInterval = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance > 0) {
+            // Show countdown when it's time to start it
+            document.getElementById("countdown-wrapper").style.display = "block";
+            document.getElementById("loader").style.display = "block";
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
+
             document.getElementById("days").textContent = days;
             document.getElementById("hours").textContent = hours;
             document.getElementById("minutes").textContent = minutes;
             document.getElementById("seconds").textContent = seconds;
-        
-        
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                {% set visibility = 1 %}
-            }
-        }, 1000);
-        
-}
-        </script>
-{% end_require_js%}
+        }
 
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            // Hide countdown and show video player
+            document.getElementById("countdown-wrapper").style.display = "none";
+            const videoPlayer = document.getElementById("video-player");
+            videoPlayer.style.visibility = "visible";
+            videoPlayer.style.position = "static";
+        }
 
-
+    }, 1000);
+</script>
+{% end_require_js %}

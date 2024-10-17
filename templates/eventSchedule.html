@@ -1,12 +1,11 @@
 <!--
     templateType: page
-    label: US Presidential Election Live Player Page
+    label: US Presidential Election Event Schedule
     isAvailableForNewContent: true
 -->
 
 {% extends "./layouts/sw-base.html" %}
 {% set private_content = true  %}
-{% set vimeo = true%}
 {% block body %}
     {%dnd_area "dnd_area"
     label="Main section",
@@ -39,25 +38,20 @@
     {% dnd_section
     background_color="rgba(10, 59, 129, 1)",
     padding={ "top": 0, "bottom": 0 },
+    no_wrap=true
     %}
-        {# Live player #}
-
         {%dnd_module
-        path="/shalom_world_web_theme/modules/player",
+        path="/shalom_world_web_theme/modules/schedulesTab",
         %}
         {%end_dnd_module%}
-
     {% end_dnd_section %}
     {% dnd_section
-    background_color="rgba(10, 59, 129, 1)",
+    background_color="rgba(10, 59, 129, 1)"
     %}
-      
-
         {%dnd_module
         path="/shalom_world_web_theme/modules/knowMoreFooterMob",
         %}
         {%end_dnd_module%}
-
     {% end_dnd_section %}
     {% dnd_section
     background_color="rgba(10, 59, 129, 1)"
