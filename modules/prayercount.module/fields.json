@@ -2,6 +2,24 @@
   {
    "children": [
     {
+     "type": "choice",
+     "id": "ad8c3254-7cd2-ab83-446d-c378bafc1698",
+     "display": "select",
+     "choices": [
+      [
+       "modal",
+       "Modal"
+      ],
+      [
+       "redirect",
+       "Redirect"
+      ]
+     ],
+     "label": "Board Type",
+     "name": "board_type",
+     "default": "modal"
+    },
+    {
      "allow_new_line": false,
      "display_width": null,
      "id": "cc3e9b2d-89d3-af79-5ec8-219547b6a4f0",
@@ -16,6 +34,19 @@
     {
      "allow_new_line": false,
      "display_width": null,
+     "label": "Prayer sub title",
+     "locked": false,
+     "name": "prayer_sub_title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "cc3e9b2d-89d3-af79-5ec8-219547b6a4f0",
+     "id": "fb41304c-a909-5019-1443-b203f348747a"
+    },
+    {
+     "allow_new_line": false,
+     "display_width": null,
      "id": "6142cfaa-cfdb-4183-b457-48dc5b1c5725",
      "label": "Popup prayer title",
      "locked": false,
@@ -23,7 +54,12 @@
      "required": false,
      "show_emoji_picker": false,
      "type": "text",
-     "validation_regex": ""
+     "validation_regex": "",
+     "visibility": {
+      "operator": "EQUAL",
+      "controlling_field_path": "prayer_counter_content.board_type",
+      "controlling_value_regex": "modal"
+     }
     },
     {
      "display_width": null,
@@ -32,7 +68,39 @@
      "locked": false,
      "name": "prayer_popup_content",
      "required": false,
-     "type": "richtext"
+     "type": "richtext",
+     "visibility": {
+      "operator": "EQUAL",
+      "controlling_field_path": "prayer_counter_content.board_type",
+      "controlling_value_regex": "modal"
+     }
+    },
+    {
+     "type": "url",
+     "id": "de2298ef-1aae-035e-96f2-58d65e55c5f7",
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Redirect URL",
+     "name": "redirect_url",
+     "visibility": {
+      "operator": "EQUAL",
+      "controlling_field_path": "prayer_counter_content.board_type",
+      "controlling_value_regex": "redirect"
+     }
     }
    ],
    "default": [],
@@ -43,10 +111,9 @@
    "label": "Prayer counter content",
    "locked": false,
    "name": "prayer_counter_content",
+   "occurrence": {},
    "required": false,
    "tab": "CONTENT",
-   "type": "group",
-   "visibility": null,
-   "occurrence": {}
+   "type": "group"
   }
  ]

@@ -143,11 +143,16 @@ background-color: #fff;
 padding: 20px;
 border-radius: 10px;
 max-width: 800px;
-width: 90%;
+width: 60%;
 text-align: center;
 position: relative;
-width: 690px;
 height: min-content;
+max-height: 80%;
+display: flex;
+}
+.model_section_content{
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* Modal Close Button */
@@ -224,6 +229,13 @@ font-weight: 400;
 text-align: left;
 padding-top: 16px; /* Optional padding above paragraphs */
 }
+
+.modal-overlay_prayer-counter .dedication-prayer p span {
+    line-height: 2em;
+
+}
+
+
 @media (max-width: 768px) {
     .body-container_prayer-counter .number {
     display: none !important ;
@@ -328,6 +340,7 @@ padding-top: 16px; /* Optional padding above paragraphs */
         text-align: center;
         position: relative;
         height: min-content;
+        max-height: 80%;
     }
     .modal-overlay_prayer-counter .close-btn {
         position: absolute;
