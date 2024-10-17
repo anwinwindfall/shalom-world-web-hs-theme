@@ -163,7 +163,7 @@
 
 }
 .body-container_schedules .schedule-item {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     padding: 10px 5px;
@@ -175,6 +175,9 @@
     max-height: 45px;
     margin-top: 30px;
     width: 100%;
+    display: grid;
+        grid-template-columns: 1.5fr 2fr 1fr;
+        place-content: center;
 }
 .body-container_schedules .schedule-item:last-child {
     border-bottom: none;
@@ -344,6 +347,9 @@
         width: 100%;
         /* margin: 10px; */
         margin-block: 23px;
+        display: grid;
+            grid-template-columns: 0.8fr 2fr 1fr;
+            place-content: center;
 
     
 
