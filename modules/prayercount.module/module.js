@@ -27,25 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Get the modal element and buttons
-const modal = document.getElementById('modal');
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeBtn');
+// // Get the modal element and buttons
+// const modal = document.getElementById('modal');
+// const openModalBtn = document.getElementById('openModalBtn');
+// const closeModalBtn = document.getElementById('closeBtn');
 
-// Open the modal when the button is clicked
-openModalBtn.addEventListener('click', function () {
-  modal.style.display = 'flex';
-});
+// // Open the modal when the button is clicked
+// openModalBtn.addEventListener('click', function () {
+//   modal.style.display = 'flex';
+// });
 
-// Close the modal when the close button is clicked
-closeModalBtn.addEventListener('click', function () {
-  modal.style.display = 'none';
-});
+// // Close the modal when the close button is clicked
+// closeModalBtn.addEventListener('click', function () {
+//   modal.style.display = 'none';
+// });
 
-// Optional: Close the modal when clicking outside the modal content
-window.addEventListener('click', function (e) {
-  if (e.target === modal) {
-      modal.style.display = 'none';
-  }
-});
+// // Optional: Close the modal when clicking outside the modal content
+// window.addEventListener('click', function (e) {
+//   if (e.target === modal) {
+//       modal.style.display = 'none';
+//   }
+// });
 
