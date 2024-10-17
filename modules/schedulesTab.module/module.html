@@ -37,7 +37,7 @@
 
         <div class="label-time-container">
             <div class="label-time-slot">12 am - 12 pm</div>
-            <div class="label-time-slot">12 am - 12 pm</div>
+            <div class="label-time-slot">12 pm - 12 am</div>
         </div>
 
         <div class="button-container">
@@ -94,7 +94,7 @@
                     {% for item in module.tab_1 %}
                     <div id=1_{{loop.index}} class = 'schedule-item'>
                         <div class = 'schedule-time'>{{ item.start_time }} <span class="time_hyphen">-</span>  {{ item.end_time }}</div>
-                        <div>
+                        <div class="name-body">
                             <div class= 'schedule-names'>{{ item.resource_name }}</div>
                             <div class= 'schedule-description'>{{ item.resource_description }}</div >  
                         </div>

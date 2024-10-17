@@ -195,7 +195,7 @@
 .body-container_schedules .schedule-names {
     flex: 0 0 57%;
     /* flex: 1; */
-    text-align: center;
+    text-align: left;
     color: rgba(10, 59, 129, 1);
     font-family: "Inter";
     font-size: 16px;
@@ -219,14 +219,14 @@
     border: 2px solid transparent;
 }
 .body-container_schedules .schedule-description {
-    flex: 1; /* Take available space */
-    text-align: center; /* Center align text */
+    flex: 1; 
+    text-align: left; 
     color: #927750;
     font-family: "Inter";
-    font-size: 12px; /* Smaller font size */
-    font-weight: 400; /* Regular weight */
-    line-height: 14px; /* Adjust line height as necessary */
-    margin-top: 4px; /* Space between name and description */
+    font-size: 12px;
+    font-weight: 400; 
+    line-height: 14px; 
+    margin-top: 4px; 
 }
 
 
@@ -250,6 +250,7 @@
     margin: 0;
     padding: 0;
     color: #EDCEA1;
+    cursor: pointer;
 
 }
 .body-container_schedules ul.button:hover li{
@@ -397,7 +398,7 @@
     }
     .body-container_schedules .schedule-names {
         flex: 0 0 55%;
-        text-align: center;
+        text-align: left;
         color: rgba(10, 59, 129, 1);
         font-family: "Inter";
         font-size: 14px;
@@ -496,12 +497,16 @@
         justify-content: center;
         overflow-y: auto;
         max-height: 95%;
+        overflow-x: hidden;
         /* height: fit-content; */
         /* border: 1px solid red; */
         /* padding-block: 10px; */
     }
     .body-container_schedules {
         padding-bottom: 0px  !important;
+    }
+    .name-body{
+        padding-left: 7px;
     }
 
     
