@@ -33,7 +33,7 @@ width: 60%;
 gap: 0px;
 border-radius: 8px;
 justify-content: space-between;
-margin-top:18px;
+margin-top:16px;
 
 }
 .body-container_prayer-counter .vist-continer {
@@ -273,13 +273,14 @@ padding-top: 16px; /* Optional padding above paragraphs */
         background: rgba(255, 255, 255, 1);
 
         border: 1px solid #ddd;
-        padding: 10px 20px;
+        padding: 5px 10px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         width: 90%;
         gap: 0px;
         border-radius: 8px;
         justify-content: space-between;
+        margin-top: 10px;
         
 
     }
