@@ -28,7 +28,7 @@ border: 1px solid #ddd;
 padding: 10px 20px;
 border-radius: 8px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-max-width: 60%;
+width: 60%;
 /* height: 84px; */
 gap: 0px;
 border-radius: 8px;
@@ -276,7 +276,7 @@ padding-top: 16px; /* Optional padding above paragraphs */
         padding: 10px 20px;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        max-width: 90%;
+        width: 90%;
         gap: 0px;
         border-radius: 8px;
         justify-content: space-between;
