@@ -24,7 +24,7 @@
         <div>
             <div class="countdown-segment">
                 <span id="days"></span>
-                <small>Days</small>
+                <small id="days-text">Days</small>
             </div>
             <div class="countdown-segment">
                 <span id="hours"></span>
@@ -130,7 +130,13 @@ console.log(getEasternTimeAsDate()) #}
             videoPlayer.style.display = "block";
             videoPlayer.style.position = "static";
         }
-
+        if(document.getElementById("days").textContent%2 == 0){
+        document.quertSelector("#countdown #days-text").textContent = "Days";
+        }
+        else{
+        document.quertSelector("#countdown #days-text").textContent = "Day";
+        }
     }, 1000);
+
 </script>
 {% end_require_js %}
