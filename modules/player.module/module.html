@@ -119,6 +119,13 @@ console.log(getEasternTimeAsDate()) #}
             document.getElementById("hours").textContent = hours;
             document.getElementById("minutes").textContent = minutes;
             document.getElementById("seconds").textContent = seconds;
+
+        if(days%2 == 0){
+        document.querySelector("#countdown #days-text").textContent = "Days";
+        }
+        else{
+        document.querySelector("#countdown #days-text").textContent = "Day";
+        }
         }
 
         if (distance < 0) {
@@ -130,12 +137,7 @@ console.log(getEasternTimeAsDate()) #}
             videoPlayer.style.display = "block";
             videoPlayer.style.position = "static";
         }
-        if(days%2 == 0){
-        document.quertSelector("#countdown #days-text").textContent = "Days";
-        }
-        else{
-        document.quertSelector("#countdown #days-text").textContent = "Day";
-        }
+        
     }, 1000);
 
 </script>
