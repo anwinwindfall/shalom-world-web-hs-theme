@@ -47,5 +47,23 @@
    "show_emoji_picker": false,
    "type": "text",
    "validation_regex": ""
+  },
+  {
+   "type": "choice",
+   "id": "5cdebc4a-493b-3eac-23c7-0db2c34022a5",
+   "display": "radio",
+   "choices": [
+    [
+     "true",
+     "true"
+    ],
+    [
+     "false",
+     "false"
+    ]
+   ],
+   "label": "rosary?",
+   "name": "rosary_",
+   "default": "false"
   }
  ]
