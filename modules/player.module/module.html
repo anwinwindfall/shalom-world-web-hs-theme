@@ -47,42 +47,64 @@
     style="visibility: hidden; background-color: transparent;  display:none;">
     {{ module.embed_code }}
 </div>
-<!-- {{ module.date_and_time }} -->
 {% require_js %}
 <script async>
-            // Get current time in ET (Eastern Time)
-            function getEasternTime() {
-                const now = new Date();
 
-                // Format the date to the 'America/New_York' timezone (ET)
-                const formatter = new Intl.DateTimeFormat('en-US', {
-                    timeZone: 'America/New_York',
-                    hour12: false,
-                    year: 'numeric',
-                    month: '2-digit',
-                    day: '2-digit',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit'
-                });
+time_{{ mod_name }} = "{{ module.date_and_time_value }}";
+year_{{ mod_name }} = time_{{ mod_name }}.substring(0, 4);
+month_{{ mod_name }} = time_{{ mod_name }}.substring(5, 7);
+day_{{ mod_name }} = time_{{ mod_name }}.substring(8, 10);
+hour_{{ mod_name }} = time_{{ mod_name }}.substring(11, 13);
+minute_{{ mod_name }} = time_{{ mod_name }}.substring(14, 16);
+seconds_{{ mod_name }} = time_{{ mod_name }}.substring(17, 19);
 
-                const parts = formatter.formatToParts(now);
-                const values = Object.fromEntries(parts.map(p => [p.type, p.value]));
 
-                // Create a Date object in ET using the extracted parts
-                return new Date(
-                    `${values.year}-${values.month}-${values.day}T${values.hour}:${values.minute}:${values.second}-04:00`
-                );
-            }
+function getTimeOffset(timezoneTime="UTC-04:00") {
+[sign, hours, minutes] = timezoneTime.split(/(UTC[+-])(\d{2}):(\d{2})/).filter(Boolean);
+offsetHours = parseInt(hours, 10);
+offsetMinutes = parseInt(minutes, 10);
+decimalOffset = offsetHours + offsetMinutes / 60;
+finalOffset = sign === "UTC-" ? -decimalOffset : decimalOffset;
 
-    const targetDateEST = new Date("{{ module.date_and_time }}").toLocaleString("en-US", {
-        timeZone: "America/New_York",
-    });
-    const targetDate = new Date(targetDateEST).getTime();
+return finalOffset;
+}
+const nextYear_{{ mod_name }} = new Date().getFullYear() + 1;
+const userTimezoneOffset_{{ mod_name }} = -new Date().getTimezoneOffset();
+const ownerTimezoneOffset_{{ mod_name }} = getTimeOffset() * 60;
+const timezoneOffset_{{ mod_name }} = (userTimezoneOffset_{{ mod_name }} - ownerTimezoneOffset_{{ mod_name }}) * 60000;
+var isSafari = /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent);
+if (isSafari) {
+    newYearTime_{{ mod_name }} = new Date(year_{{ mod_name }} + "-" + month_{{ mod_name }} + "-" + day_{{ mod_name }} + " " + hour_{{ mod_name }} + ":" + minute_{{ mod_name }} + ":" + seconds_{{ mod_name }});
+} else {
+    newYearTime_{{ mod_name }} = new Date(month_{{ mod_name }} + " " + day_{{ mod_name }} + " " + year_{{ mod_name }} + " " + hour_{{ mod_name }} + ":" + minute_{{ mod_name }} + ":" + seconds_{{ mod_name }});
+}
 
+            {# // Get current time in ET (Eastern Time)
+            function getEasternTimeAsDate() {
+            const utcTime = new Date(); // Current UTC time
+
+            // Determine if we are in Daylight Saving Time (DST)
+            const isDST = (date) => {
+                // Check if the date is in the DST range for New York
+                const january = new Date(date.getFullYear(), 0, 1); // January 1st
+                const july = new Date(date.getFullYear(), 6, 1); // July 1st
+                const dstOffset = Math.max(january.getTimezoneOffset(), july.getTimezoneOffset()); // Determine offset
+                return date.getTimezoneOffset() < dstOffset; // If current offset is less than max offset, it's DST
+            };
+        
+            // Get current time in Eastern Time (EDT/EST)
+            const easternOffset = isDST(utcTime) ? -4 : -5; // EDT is -4, EST is -5
+            const easternTime = new Date(utcTime.getTime() + (easternOffset * 60 * 60 * 1000)); // Convert UTC to Eastern Time
+        
+            return easternTime;
+        }
+
+    const targetDateEST = new Date("{{ module.date_and_time_value }}")
+    const targetDate = targetDateEST.getTime();
+console.log(getEasternTimeAsDate()) #}
     const countdownInterval = setInterval(function () {
-        const now = new Date().getTime();
-        const distance = targetDate - getEasternTime()
+    currentTime_{{ mod_name }} = new Date();
+    let distance = newYearTime_{{ mod_name }} - (currentTime_{{ mod_name }} - timezoneOffset_{{ mod_name }});
 
         if (distance > 0) {
             // Show countdown when it's time to start it

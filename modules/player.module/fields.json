@@ -13,6 +13,16 @@
    "validation_regex": ""
   },
   {
+   "display_width": null,
+   "id": "496e9069-1104-fe7c-2bbe-982fedb1abac",
+   "label": "Date and time Value",
+   "locked": false,
+   "name": "date_and_time_value",
+   "required": false,
+   "step": 30,
+   "type": "datetime"
+  },
+  {
    "allow_new_line": false,
    "default": "Virtual Chapel",
    "display_width": null,
@@ -26,34 +36,16 @@
    "validation_regex": ""
   },
   {
-  "allow_new_line": false,
-  "default": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/939262528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"SHALOM WORLD 10TH ANNIVERSARY\"></iframe></div>",
-  "display_width": null,
-  "id": "73650246-dfb1-2fd8-3090-84c8520cea0a",
+   "allow_new_line": false,
+   "default": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/939262528?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"SHALOM WORLD 10TH ANNIVERSARY\"></iframe></div>",
+   "display_width": null,
+   "id": "73650246-dfb1-2fd8-3090-84c8520cea0a",
    "label": "Embed Code",
-  "locked": false,
+   "locked": false,
    "name": "embed_code",
-  "required": false,
-  "show_emoji_picker": false,
-  "type": "text",
-  "validation_regex": ""
-},
-{
-  "type": "choice",
-  "id": "d9d482ac-a92a-9a1e-1a7e-150b68991232",
-  "display": "radio",
-  "choices": [
-    [
-      "true",
-      "true"
-    ],
-    [
-      "false",
-      "false"
-    ]
-  ],
-  "label": "Rosary?",
-  "name": "rosary_",
-  "default": "false"
+   "required": false,
+   "show_emoji_picker": false,
+   "type": "text",
+   "validation_regex": ""
   }
  ]
